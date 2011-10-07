@@ -41,14 +41,6 @@
       <library name="Grails User Library (EricFieldIs)">
         <CLASSES>
           <root url="file://$MODULE_DIR$/lib" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/javax.mail/mail/jars/mail-1.4.4.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.amazonaws/aws-java-sdk/jars/aws-java-sdk-1.1.9.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.7.2.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/jars/java-xmlbuilder-0.4.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/commons-httpclient/commons-httpclient/jars/commons-httpclient-3.1.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/net.java.dev.jets3t/jets3t/jars/jets3t-0.8.1.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.codehaus.groovy.modules.http-builder/http-builder/jars/http-builder-0.5.0.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.maven/maven-ant-tasks/jars/maven-ant-tasks-2.1.0.jar!/" />
         </CLASSES>
