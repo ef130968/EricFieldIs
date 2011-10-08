@@ -7,7 +7,7 @@ class Skill {
     static belongsTo = [talent: Talent]
 
     static constraints = {
-        name (blank: false)
+        name(blank: false)
     }
 
 }

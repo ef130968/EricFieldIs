@@ -4,9 +4,9 @@ class Person {
 
     String name
 
-    static hasMany = [talents: Talent]
+    static hasMany = [profiles: Profile]
 
     static constraints = {
-        name (blank: false)
+        name(blank: false)
     }
 }

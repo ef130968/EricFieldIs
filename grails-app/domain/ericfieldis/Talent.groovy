@@ -7,6 +7,6 @@ class Talent {
     static hasMany = [skills: Skill]
 
     static constraints = {
-        name (blank: false)
+        name(blank: false)
     }
 }
