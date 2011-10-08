@@ -4,6 +4,8 @@ import ericfieldis.profile.Profile
 
 class Person {
 
+    int id
+
     String firstName
     String middleInitial
     String lastName
@@ -14,5 +16,9 @@ class Person {
         firstName(blank: false, maxSize: 20)
         middleInitial(blank: false, size: 1..1)
         lastName(blank: false, maxSize: 20)
+    }
+
+    String personName() {
+        firstName + " " + middleInitial + " " + lastName
     }
 }

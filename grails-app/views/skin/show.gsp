@@ -21,28 +21,18 @@
             <div class="dialog">
                 <table>
                     <tbody>
-                    
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="skin.id.label" default="Id" /></td>
-                            
                             <td valign="top" class="value">${fieldValue(bean: skinInstance, field: "id")}</td>
-                            
                         </tr>
-                    
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="skin.name.label" default="Name" /></td>
-                            
                             <td valign="top" class="value">${fieldValue(bean: skinInstance, field: "name")}</td>
-                            
                         </tr>
-                    
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="skin.profile.label" default="Profile" /></td>
-                            
-                            <td valign="top" class="value"><g:link controller="profile" action="show" id="${skinInstance?.profile?.id}">${skinInstance?.profile?.encodeAsHTML()}</g:link></td>
-                            
+                            <td valign="top" class="value"><g:link controller="profile" action="show" id="${skinInstance?.profile?.id}">${skinInstance?.profile?.name?.encodeAsHTML()}</g:link></td>
                         </tr>
-                    
                     </tbody>
                 </table>
             </div>

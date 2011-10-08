@@ -2,56 +2,246 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe7720a8-f941-4f6a-abc3-7e9a6c4595d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/Profile.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Friend.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Job.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Opinion.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Reference.groovy" />
-      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Friend.groovy" afterPath="" />
-      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Job.groovy" afterPath="" />
-      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Opinion.groovy" afterPath="" />
-      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Profile.groovy" afterPath="" />
-      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Reference.groovy" afterPath="" />
-      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Skill.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Skill.groovy" />
-      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Talent.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Talent.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/taglib/ericfieldis/HTMLTagLib.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/taglib/FormValidationUtils.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/taglib/HTML5.groovy" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\views\profile\create.gsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\views\profile\edit.gsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\views\profile\list.gsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\views\profile\show.gsp" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\BootStrap$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\BootStrap$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\BootStrap.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\BuildConfig$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\BuildConfig$_run_closure1_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\BuildConfig$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\BuildConfig$_run_closure1_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\Config$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\Config$_run_closure1_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\Config$_run_closure1_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\Config$_run_closure1_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\Config$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\Config.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\DataSource$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\DataSource$_run_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\DataSource$_run_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\DataSource$_run_closure3_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\DataSource$_run_closure3_closure4_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\DataSource$_run_closure3_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\DataSource$_run_closure3_closure5_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\DataSource$_run_closure3_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\DataSource$_run_closure3_closure6_closure9.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\DataSource$_run_closure3_closure6_closure9_closure10.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\DataSource.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\HibernateGrailsPlugin$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\HibernateGrailsPlugin$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\HibernateGrailsPlugin.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\MysqlConnectorjGrailsPlugin.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\Profile$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\Profile.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\TomcatGrailsPlugin.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\UrlMappings$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\UrlMappings$__clinit__closure1_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\UrlMappings$__clinit__closure1_closure2_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\UrlMappings.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\application.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Friend$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Friend.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\FriendController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\FriendController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\FriendController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\FriendController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\FriendController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\FriendController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\FriendController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\FriendController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\FriendController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\HelpOffered.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\HelpWanted.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Job$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Job.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\JobController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\JobController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\JobController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\JobController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\JobController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\JobController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\JobController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\JobController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\JobController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\JobProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\JobSeeker.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Money$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Money.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\MoneyController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\MoneyController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\MoneyController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\MoneyController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\MoneyController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\MoneyController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\MoneyController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\MoneyController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\MoneyController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Opinion$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Opinion.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\OpinionController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\OpinionController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\OpinionController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\OpinionController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\OpinionController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\OpinionController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\OpinionController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\OpinionController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\OpinionController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Person$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Person.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\PersonController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\PersonController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\PersonController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\PersonController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\PersonController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\PersonController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\PersonController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\PersonController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\PersonController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Profile$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Profile$type.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Profile.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProfileController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProfileController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProfileController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProfileController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProfileController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProfileController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProfileController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProfileController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProfileController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProfileType.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Project$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Project.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProjectController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProjectController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProjectController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProjectController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProjectController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProjectController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProjectController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProjectController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ProjectController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Reference$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Reference.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ReferenceController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ReferenceController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ReferenceController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ReferenceController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ReferenceController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ReferenceController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ReferenceController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ReferenceController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\ReferenceController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Skill$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Skill.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkillController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkillController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkillController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkillController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkillController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkillController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkillController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkillController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkillController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Skin$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Skin.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkinController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkinController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkinController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkinController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkinController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkinController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkinController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkinController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\SkinController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Skinny$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Skinny.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Social.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Talent$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\Talent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\TalentController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\TalentController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\TalentController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\TalentController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\TalentController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\TalentController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\TalentController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\TalentController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\TalentController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\HelpOffered$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\HelpOffered.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\HelpWanted$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\HelpWanted.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\JobProvider$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\JobProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\JobSeeker$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\JobSeeker.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\LookingForSomeone$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\LookingForSomeone.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\Profile$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\Profile.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\Social$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\Social.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\Friend$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\Friend.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\Job$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\Job.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\Opinion$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\Opinion.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\Reference$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\Reference.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\Trait$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\Trait.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\TraitController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\TraitController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\TraitController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\TraitController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\TraitController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\TraitController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\TraitController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\TraitController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\TraitController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\Value$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\Value.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\ValueController$_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\ValueController$_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\ValueController$_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\ValueController$_closure4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\ValueController$_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\ValueController$_closure6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\ValueController$_closure7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\ValueController$_closure8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\ValueController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\talent\Skill$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\talent\Skill.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\talent\Talent$__clinit__closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\ericfieldis\profile\components\talent\Talent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\me\ericfieldis\datatypes\enums\ProfileType.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\me\ericfieldis\framework\plugin\bootstrap\database\DataGenesis$_createTheWorld_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\me\ericfieldis\framework\plugin\bootstrap\database\DataGenesis.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\me\ericfieldis\framework\plugin\bootstrap\database\creator\IDataCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\resources$_run_closure1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\resources$_run_closure1_closure2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\target\classes\resources.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/FriendController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/FriendController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/JobController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/JobController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/OpinionController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/OpinionController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ProfileController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ProfileController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ReferenceController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ReferenceController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/SkillController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/SkillController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/TalentController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/TalentController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/ericfieldis/Person.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/Person.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/ericfieldis/Project.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/Project.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/ericfieldis/Skin.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/Skin.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/friend/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/friend/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/friend/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/friend/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/friend/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/friend/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/friend/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/friend/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/job/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/job/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/job/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/job/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/job/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/job/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/job/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/job/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/opinion/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/opinion/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/opinion/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/opinion/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/opinion/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/opinion/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/opinion/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/opinion/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/project/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/project/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/project/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/project/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/reference/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/reference/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/reference/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/reference/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/reference/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/reference/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/reference/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/reference/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/skill/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/skill/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/skill/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/skill/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/skill/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/skill/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/skill/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/skill/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/Profile.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/Profile.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/edit.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/skin/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/skin/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/talent/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/talent/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/talent/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/talent/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/skin/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/skin/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/value/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/value/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/value/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/value/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/value/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/value/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/value/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/value/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/me/ericfieldis/datatypes/enums/ProfileType.groovy" afterPath="$PROJECT_DIR$/src/groovy/me/ericfieldis/datatypes/enums/ProfileType.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
     </list>
     <ignored path="EricFieldIs.iws" />
@@ -111,125 +301,7 @@
     <favorites_list name="EricFieldIs" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Profile.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/Profile.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="26.697674">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Trait.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Trait.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="297" selection-end="297" vertical-scroll-proportion="-5.5348835">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Value.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Value.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="187" selection-end="187" vertical-scroll-proportion="-3.9534883">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TraitController.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/profile/components/TraitController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Talent.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Talent.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="31" selection-start="212" selection-end="212" vertical-scroll-proportion="-3.9534883">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Opinion.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Opinion.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="92" selection-end="299" vertical-scroll-proportion="-5.5348835">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reference.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Reference.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="36" selection-start="171" selection-end="171" vertical-scroll-proportion="-2.372093">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Friend.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Friend.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="132" selection-end="208" vertical-scroll-proportion="-3.9534883">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Job.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Job.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="140" selection-end="386" vertical-scroll-proportion="-6.3255816">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Person.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Person.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="32" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.9534883">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -252,22 +324,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Skill.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/TalentController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/Profile.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/profile/components/ValueController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ProfileController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/Project.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/profile/list.gsp" />
+        <option value="$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/bootstrap/database/creator/HTML.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/taglib/FormValidationUtils.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/taglib/HTML5.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/taglib/ericfieldis/HTML.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/me/ericfieldis/datatypes/enums/ProfileType.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/Person.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/Skin.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/LookingForSomeone.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/profile/create.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/profile/edit.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/skin/create.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/Profile.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Friend.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Job.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Opinion.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Reference.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Trait.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Value.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Talent.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/skin/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/profile/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/person/edit.gsp" />
       </list>
     </option>
   </component>
@@ -335,6 +407,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ericfieldis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taglib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -608,12 +718,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="i18n" />
+              <option name="myItemId" value="taglib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'messages'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
+              <option name="myItemId" value="ericfieldis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -693,106 +803,6 @@
               <option name="myItemId" value="profile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EricFieldIs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EricFieldIs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ericfieldis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="profile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EricFieldIs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EricFieldIs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ericfieldis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EricFieldIs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EricFieldIs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EricFieldIs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EricFieldIs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -829,14 +839,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.ericfieldis.framework.plugin.taglib" />
       <recent name="me.ericfieldis.framework.plugin.bootstrap.database.creator" />
       <recent name="me.ericfieldis.framework.plugin.bootstrap.database" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\src\EricFieldIs\scripts" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ericfieldis" />
+    </key>
   </component>
-  <component name="RunManager" selected="Grails.Grails:EricFieldIs">
+  <component name="RunManager" selected="Grails.DataGenesis:EricFieldIs">
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -1041,16 +1055,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-188" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32021275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32021275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33723405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33723405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.67021275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1061,7 +1075,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20748663" sideWeight="0.662766" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20748663" sideWeight="0.6797872" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1117,70 +1131,65 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/project/show.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/PersonController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="99" selection-start="2508" selection-end="2508" vertical-scroll-proportion="-5.5510206">
+        <state line="12" column="0" selection-start="286" selection-end="286" vertical-scroll-proportion="-1.7743056">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Skill.groovy">
+    <entry file="jar://C:/pgms/grails-1.3.7/lib/org.springframework.web.servlet-3.0.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="51" selection-start="98" selection-end="98" vertical-scroll-proportion="-0.7906977">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/TalentController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="36" selection-start="488" selection-end="488" vertical-scroll-proportion="28.391304">
+        <state line="97" column="19" selection-start="6504" selection-end="6504" vertical-scroll-proportion="0.4216028">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/ProfileController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="36" selection-start="638" selection-end="638" vertical-scroll-proportion="-8.217391">
+        <state line="24" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="-8.347826">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Skin.groovy">
+    <entry file="file://$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/taglib/FormValidationUtils.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.9767442">
+        <state line="7" column="0" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Project.groovy">
+    <entry file="file://$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/taglib/HTML5.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="33" selection-start="148" selection-end="148" vertical-scroll-proportion="-3.5581396">
+        <state line="9" column="6" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/Profile.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/taglib/ericfieldis/HTMLTagLib.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="26.697674">
+        <state line="3" column="2" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/list.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.634103">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/me/ericfieldis/datatypes/enums/ProfileType.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="26" selection-start="437" selection-end="452" vertical-scroll-proportion="0.6666667">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Person.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.9534883">
+        <state line="20" column="21" selection-start="376" selection-end="386" vertical-scroll-proportion="0.59753954">
           <folding />
         </state>
       </provider>
@@ -1188,9 +1197,30 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Job.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/edit.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="140" selection-end="386" vertical-scroll-proportion="-6.3255816">
+        <state line="65" column="86" selection-start="3662" selection-end="3662" vertical-scroll-proportion="0.60390764">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="86" selection-start="3549" selection-end="3586" vertical-scroll-proportion="-7.6734695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/skin/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="92" selection-start="2367" selection-end="2367" vertical-scroll-proportion="-7.979592">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/Profile.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="36" selection-start="528" selection-end="528" vertical-scroll-proportion="-5.9302325">
           <folding />
         </state>
       </provider>
@@ -1198,69 +1228,23 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Friend.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/skin/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="132" selection-end="208" vertical-scroll-proportion="-3.9534883">
+        <state line="33" column="167" selection-start="2088" selection-end="2088" vertical-scroll-proportion="-4.2040815">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Opinion.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="92" selection-end="299" vertical-scroll-proportion="-5.5348835">
+        <state line="49" column="95" selection-start="2875" selection-end="2875" vertical-scroll-proportion="-5.3265305">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Reference.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/person/edit.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="36" selection-start="171" selection-end="171" vertical-scroll-proportion="-2.372093">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Talent.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="212" selection-end="212" vertical-scroll-proportion="-3.9534883">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Trait.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="297" selection-end="297" vertical-scroll-proportion="-5.5348835">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Value.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="187" selection-end="187" vertical-scroll-proportion="-3.9534883">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/profile/components/TraitController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="62" column="111" selection-start="3979" selection-end="3979" vertical-scroll-proportion="0.75272727">
           <folding />
         </state>
       </provider>

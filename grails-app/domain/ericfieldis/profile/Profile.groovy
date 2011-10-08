@@ -16,6 +16,8 @@ class Profile {
     static belongsTo = [person: Person]
     static hasMany = [skins: Skin]
 
+    int id
+
     String name
     String description
 

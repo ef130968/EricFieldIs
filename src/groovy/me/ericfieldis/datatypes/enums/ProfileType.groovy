@@ -21,4 +21,14 @@ public enum ProfileType {
     static list() {
         [JOB_SEEKER, JOB_PROVIDER]
     }
+
+    String profileTypeName() {
+        this.name
+    }
+/*
+    @Override
+    String toString() {
+        this.name
+    }
+*/
 }

@@ -30,7 +30,6 @@
                 <div class="dialog">
                     <table>
                         <tbody>
-                        
                             <tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="firstName"><g:message code="person.firstName.label" default="First Name" /></label>
@@ -39,7 +38,6 @@
                                     <g:textField name="firstName" maxlength="20" value="${personInstance?.firstName}" />
                                 </td>
                             </tr>
-                        
                             <tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="middleInitial"><g:message code="person.middleInitial.label" default="Middle Initial" /></label>
@@ -48,7 +46,6 @@
                                     <g:textField name="middleInitial" maxlength="1" value="${personInstance?.middleInitial}" />
                                 </td>
                             </tr>
-                        
                             <tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="lastName"><g:message code="person.lastName.label" default="Last Name" /></label>
@@ -57,20 +54,15 @@
                                     <g:textField name="lastName" maxlength="20" value="${personInstance?.lastName}" />
                                 </td>
                             </tr>
-                        
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="profiles"><g:message code="person.profiles.label" default="Profiles" /></label>
+                                  <label><g:message code="person.profiles.label" default="Profiles" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'profiles', 'errors')}">
-                                    
-<ul>
-<g:each in="${personInstance?.profiles?}" var="p">
-    <li><g:link controller="profile" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
-</g:each>
-</ul>
-<g:link controller="profile" action="create" params="['person.id': personInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'profile.label', default: 'Profile')])}</g:link>
-
+                                    <ul><g:each in="${personInstance?.profiles?}" var="p">
+                                        <li><g:link controller="profile" action="show" id="${p.id}">${p?.name?.encodeAsHTML()}</g:link></li>
+                                    </g:each></ul>
+                                    <g:link controller="profile" action="create" params="['person.id': personInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'profile.label', default: 'Profile')])}</g:link>
                                 </td>
                             </tr>
                         
