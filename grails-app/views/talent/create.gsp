@@ -1,6 +1,6 @@
 
 
-<%@ page import="ericfieldis.Talent" %>
+<%@ page import="ericfieldis.profile.components.talent.Talent" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

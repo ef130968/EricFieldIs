@@ -1,5 +1,7 @@
 package ericfieldis
 
+import ericfieldis.profile.Profile
+
 class ProfileController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]

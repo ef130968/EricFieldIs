@@ -1,6 +1,6 @@
 
 
-<%@ page import="ericfieldis.Friend" %>
+<%@ page import="ericfieldis.profile.components.Friend" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

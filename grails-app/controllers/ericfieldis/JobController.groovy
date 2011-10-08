@@ -1,5 +1,7 @@
 package ericfieldis
 
+import ericfieldis.profile.components.Job
+
 class JobController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]

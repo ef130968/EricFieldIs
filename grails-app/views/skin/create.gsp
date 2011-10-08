@@ -39,10 +39,10 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="profile"><g:message code="skin.profile.label" default="Profile" /></label>
+                                    <label for="profile.id"><g:message code="skin.profile.label" default="Profile" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: skinInstance, field: 'profile', 'errors')}">
-                                    <g:select name="profile.id" from="${ericfieldis.Profile.list()}" optionKey="id" value="${skinInstance?.profile?.id}"  />
+                                    <g:select name="profile.id" from="${ericfieldis.Profile.list()}" optionKey="id" optionValue="name" value="${skinInstance?.profile?.id}"  />
                                 </td>
                             </tr>
                         

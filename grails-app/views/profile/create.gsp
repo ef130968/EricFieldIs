@@ -57,7 +57,7 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="person"><g:message code="profile.person.label" default="Person" /></label>
+                                    <label for="person.id"><g:message code="profile.person.label" default="Person" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'person', 'errors')}">
                                     <g:select name="person.id" from="${ericfieldis.Person.list()}" optionKey="id" value="${profileInstance?.person?.id}"  />

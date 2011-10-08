@@ -1,5 +1,7 @@
 package ericfieldis
 
+import ericfieldis.profile.components.talent.Skill
+
 class SkillController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]

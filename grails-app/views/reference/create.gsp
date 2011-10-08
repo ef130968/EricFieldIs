@@ -1,4 +1,4 @@
-<%@ page import="ericfieldis.Reference" %>
+<%@ page import="ericfieldis.profile.components.Reference" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>

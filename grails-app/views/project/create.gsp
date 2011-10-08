@@ -48,10 +48,10 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="profile"><g:message code="project.profile.label" default="Profile" /></label>
+                                    <label for="profile.id"><g:message code="project.profile.label" default="Profile" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: projectInstance, field: 'profile', 'errors')}">
-                                    <g:select name="profile.id" from="${ericfieldis.Profile.list()}" optionKey="id" value="${projectInstance?.profile?.id}"  />
+                                    <g:select name="profile.id" from="${ericfieldis.Profile.list()}" optionKey="id" optionValue="name" value="${projectInstance?.profile?.id}"  />
                                 </td>
                             </tr>
                         

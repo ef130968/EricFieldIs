@@ -2,28 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe7720a8-f941-4f6a-abc3-7e9a6c4595d0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/Profile.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Friend.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Job.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Opinion.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Reference.groovy" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Friend.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Job.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Opinion.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Profile.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Reference.groovy" afterPath="" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Skill.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Skill.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\Talent.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Talent.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/PersonController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/PersonController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/FriendController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/FriendController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/JobController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/JobController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/OpinionController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/OpinionController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ProfileController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ProfileController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ProjectController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ProjectController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ReferenceController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ReferenceController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/SkillController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/SkillController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/TalentController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/TalentController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/ericfieldis/Person.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/Person.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/ericfieldis/Project.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/Project.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/ericfieldis/Skin.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/Skin.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/friend/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/friend/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/friend/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/friend/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/friend/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/friend/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/friend/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/friend/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/job/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/job/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/job/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/job/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/job/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/job/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/job/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/job/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/opinion/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/opinion/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/opinion/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/opinion/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/opinion/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/opinion/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/opinion/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/opinion/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/project/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/project/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/project/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/project/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/project/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/project/list.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/project/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/project/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/reference/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/reference/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/reference/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/reference/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/reference/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/reference/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/reference/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/reference/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/skill/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/skill/create.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/skill/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/skill/edit.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/skill/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/skill/list.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/skill/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/skill/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/skin/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/skin/create.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/talent/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/talent/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/talent/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/talent/edit.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/talent/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/talent/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/talent/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/talent/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
     </list>
     <ignored path="EricFieldIs.iws" />
@@ -85,9 +113,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Profile.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Profile.groovy">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/Profile.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="31" selection-start="159" selection-end="159" vertical-scroll-proportion="-2.372093">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="26.697674">
               <folding />
             </state>
           </provider>
@@ -96,10 +124,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Money.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Money.groovy">
+      <file leaf-file-name="Trait.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Trait.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="14" column="0" selection-start="297" selection-end="297" vertical-scroll-proportion="-5.5348835">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Value.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Value.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="13" selection-start="187" selection-end="187" vertical-scroll-proportion="-3.9534883">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TraitController.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/profile/components/TraitController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Talent.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Talent.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="31" selection-start="212" selection-end="212" vertical-scroll-proportion="-3.9534883">
               <folding />
             </state>
           </provider>
@@ -109,9 +170,21 @@
         </entry>
       </file>
       <file leaf-file-name="Opinion.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Opinion.groovy">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Opinion.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="14" column="0" selection-start="92" selection-end="299" vertical-scroll-proportion="-5.5348835">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Reference.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Reference.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="36" selection-start="171" selection-end="171" vertical-scroll-proportion="-2.372093">
               <folding />
             </state>
           </provider>
@@ -121,9 +194,9 @@
         </entry>
       </file>
       <file leaf-file-name="Friend.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Friend.groovy">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Friend.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="10" column="0" selection-start="132" selection-end="208" vertical-scroll-proportion="-3.9534883">
               <folding />
             </state>
           </provider>
@@ -132,19 +205,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FriendController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/FriendController.groovy">
+      <file leaf-file-name="Job.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Job.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="40" selection-start="481" selection-end="481" vertical-scroll-proportion="-5.130435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Skin.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Skin.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="27" selection-end="27" vertical-scroll-proportion="0.059753954">
+            <state line="16" column="0" selection-start="140" selection-end="386" vertical-scroll-proportion="-6.3255816">
               <folding />
             </state>
           </provider>
@@ -153,39 +217,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/skin/edit.gsp">
+      <file leaf-file-name="Person.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Person.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="56" selection-start="936" selection-end="936" vertical-scroll-proportion="5.428571">
+            <state line="10" column="32" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.9534883">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SkinController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/SkinController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="30" selection-start="656" selection-end="656" vertical-scroll-proportion="3.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfileController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/ProfileController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="27" selection-end="27" vertical-scroll-proportion="-1.4782609">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/profile/list.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -212,22 +252,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/PersonController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ProjectController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Skill.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/TalentController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/SkillController.groovy" />
-        <option value="$PROJECT_DIR$/scripts/CleanDatabase.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/bootstrap/database/creator/IDataCreator.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/bootstrap/database/DataGenesis.groovy" />
-        <option value="$PROJECT_DIR$/scripts/DataGenesis.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/Project.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/me/ericfieldis/datatypes/enums/ProfileType.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/Skin.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/Profile.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/Opinion.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/FriendController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/SkinController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/ProfileController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/Project.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/Person.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/Skin.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/LookingForSomeone.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/Profile.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Friend.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Job.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Opinion.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Reference.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Trait.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Value.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Talent.groovy" />
       </list>
     </option>
   </component>
@@ -492,7 +532,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="person" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,6 +635,100 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ericfieldis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ericfieldis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Profile.groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ericfieldis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ericfieldis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="talent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -870,9 +1048,9 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32021275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32021275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33723405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33723405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.67021275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -883,7 +1061,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20748663" sideWeight="0.6797872" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20748663" sideWeight="0.662766" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -939,9 +1117,16 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Project.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/project/show.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="148" selection-end="148" vertical-scroll-proportion="-3.5581396">
+        <state line="46" column="99" selection-start="2508" selection-end="2508" vertical-scroll-proportion="-5.5510206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Skill.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="51" selection-start="98" selection-end="98" vertical-scroll-proportion="-0.7906977">
           <folding />
         </state>
       </provider>
@@ -949,130 +1134,135 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/me/ericfieldis/datatypes/enums/ProfileType.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/TalentController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+        <state line="18" column="36" selection-start="488" selection-end="488" vertical-scroll-proportion="28.391304">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/pgms/grails-1.3.7/lib/groovy-all-1.7.8.jar!/groovy/lang/Reference.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="149" selection-end="149" vertical-scroll-proportion="0.14705883">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Job.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.7906977">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Reference.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Money.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Opinion.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/ProfileController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="27" selection-end="27" vertical-scroll-proportion="-1.4782609">
+        <state line="24" column="36" selection-start="638" selection-end="638" vertical-scroll-proportion="-8.217391">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/edit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.410909">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/list.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Friend.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/FriendController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="40" selection-start="481" selection-end="481" vertical-scroll-proportion="-5.130435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/skin/edit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="56" selection-start="936" selection-end="936" vertical-scroll-proportion="5.428571">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/SkinController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="30" selection-start="656" selection-end="656" vertical-scroll-proportion="3.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Profile.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="159" selection-end="159" vertical-scroll-proportion="-2.372093">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Skin.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="27" selection-end="27" vertical-scroll-proportion="0.059753954">
+        <state line="5" column="36" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.9767442">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Project.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="33" selection-start="148" selection-end="148" vertical-scroll-proportion="-3.5581396">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/Profile.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="26.697674">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/Person.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="32" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.9534883">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Job.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="140" selection-end="386" vertical-scroll-proportion="-6.3255816">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Friend.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="132" selection-end="208" vertical-scroll-proportion="-3.9534883">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Opinion.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="92" selection-end="299" vertical-scroll-proportion="-5.5348835">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Reference.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="36" selection-start="171" selection-end="171" vertical-scroll-proportion="-2.372093">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/talent/Talent.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="31" selection-start="212" selection-end="212" vertical-scroll-proportion="-3.9534883">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Trait.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="297" selection-end="297" vertical-scroll-proportion="-5.5348835">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/profile/components/Value.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="187" selection-end="187" vertical-scroll-proportion="-3.9534883">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/profile/components/TraitController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

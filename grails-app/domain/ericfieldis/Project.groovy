@@ -1,5 +1,7 @@
 package ericfieldis
 
+import ericfieldis.profile.Profile
+
 class Project {
 
     String title

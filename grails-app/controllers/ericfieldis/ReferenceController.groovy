@@ -1,5 +1,7 @@
 package ericfieldis
 
+import ericfieldis.profile.components.Reference
+
 class ReferenceController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]

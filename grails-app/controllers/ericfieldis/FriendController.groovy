@@ -1,5 +1,7 @@
 package ericfieldis
 
+import ericfieldis.profile.components.Friend
+
 class FriendController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
