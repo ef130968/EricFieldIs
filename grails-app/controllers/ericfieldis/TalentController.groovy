@@ -58,7 +58,7 @@ class TalentController {
             if (params.version) {
                 def version = params.version.toLong()
                 if (talentInstance.version > version) {
-
+                    
                     talentInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'talent.label', default: 'Talent')] as Object[], "Another user has updated this Talent while you were editing")
                     render(view: "edit", model: [talentInstance: talentInstance])
                     return

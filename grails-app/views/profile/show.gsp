@@ -44,6 +44,13 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="profile.profileType.label" default="Profile Type" /></td>
+                            
+                            <td valign="top" class="value">${profileInstance?.profileType?.encodeAsHTML()}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="profile.person.label" default="Person" /></td>
                             
                             <td valign="top" class="value"><g:link controller="person" action="show" id="${profileInstance?.person?.id}">${profileInstance?.person?.encodeAsHTML()}</g:link></td>
@@ -51,25 +58,12 @@
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="profile.projects.label" default="Projects" /></td>
+                            <td valign="top" class="name"><g:message code="profile.skins.label" default="Skins" /></td>
                             
                             <td valign="top" style="text-align: left;" class="value">
                                 <ul>
-                                <g:each in="${profileInstance.projects}" var="p">
-                                    <li><g:link controller="project" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
-                                </g:each>
-                                </ul>
-                            </td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="profile.talents.label" default="Talents" /></td>
-                            
-                            <td valign="top" style="text-align: left;" class="value">
-                                <ul>
-                                <g:each in="${profileInstance.talents}" var="t">
-                                    <li><g:link controller="talent" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></li>
+                                <g:each in="${profileInstance.skins}" var="s">
+                                    <li><g:link controller="skin" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></li>
                                 </g:each>
                                 </ul>
                             </td>

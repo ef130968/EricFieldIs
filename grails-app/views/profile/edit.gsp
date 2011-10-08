@@ -51,6 +51,15 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="profileType"><g:message code="profile.profileType.label" default="Profile Type" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'profileType', 'errors')}">
+                                    <g:select name="profileType" from="${me.ericfieldis.datatypes.enums.ProfileType?.values()}" keys="${me.ericfieldis.datatypes.enums.ProfileType?.values()*.name()}" value="${profileInstance?.profileType?.name()}"  />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="person"><g:message code="profile.person.label" default="Person" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'person', 'errors')}">
@@ -60,32 +69,16 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="projects"><g:message code="profile.projects.label" default="Projects" /></label>
+                                  <label for="skins"><g:message code="profile.skins.label" default="Skins" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'projects', 'errors')}">
+                                <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'skins', 'errors')}">
                                     
 <ul>
-<g:each in="${profileInstance?.projects?}" var="p">
-    <li><g:link controller="project" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
+<g:each in="${profileInstance?.skins?}" var="s">
+    <li><g:link controller="skin" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></li>
 </g:each>
 </ul>
-<g:link controller="project" action="create" params="['profile.id': profileInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'project.label', default: 'Project')])}</g:link>
-
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                  <label for="talents"><g:message code="profile.talents.label" default="Talents" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'talents', 'errors')}">
-                                    
-<ul>
-<g:each in="${profileInstance?.talents?}" var="t">
-    <li><g:link controller="talent" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></li>
-</g:each>
-</ul>
-<g:link controller="talent" action="create" params="['profile.id': profileInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'talent.label', default: 'Talent')])}</g:link>
+<g:link controller="skin" action="create" params="['profile.id': profileInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'skin.label', default: 'Skin')])}</g:link>
 
                                 </td>
                             </tr>

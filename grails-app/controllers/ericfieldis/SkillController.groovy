@@ -58,7 +58,7 @@ class SkillController {
             if (params.version) {
                 def version = params.version.toLong()
                 if (skillInstance.version > version) {
-
+                    
                     skillInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'skill.label', default: 'Skill')] as Object[], "Another user has updated this Skill while you were editing")
                     render(view: "edit", model: [skillInstance: skillInstance])
                     return

@@ -48,6 +48,15 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                    <label for="profileType"><g:message code="profile.profileType.label" default="Profile Type" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'profileType', 'errors')}">
+                                    <g:select name="profileType" from="${me.ericfieldis.datatypes.enums.ProfileType?.values()}" keys="${me.ericfieldis.datatypes.enums.ProfileType?.values()*.name()}" value="${profileInstance?.profileType?.name()}"  />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                     <label for="person"><g:message code="profile.person.label" default="Person" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'person', 'errors')}">

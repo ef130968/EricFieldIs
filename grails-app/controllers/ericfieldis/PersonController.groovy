@@ -58,7 +58,7 @@ class PersonController {
             if (params.version) {
                 def version = params.version.toLong()
                 if (personInstance.version > version) {
-
+                    
                     personInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'person.label', default: 'Person')] as Object[], "Another user has updated this Person while you were editing")
                     render(view: "edit", model: [personInstance: personInstance])
                     return

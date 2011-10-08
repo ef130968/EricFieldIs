@@ -58,7 +58,7 @@ class ProfileController {
             if (params.version) {
                 def version = params.version.toLong()
                 if (profileInstance.version > version) {
-
+                    
                     profileInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'profile.label', default: 'Profile')] as Object[], "Another user has updated this Profile while you were editing")
                     render(view: "edit", model: [profileInstance: profileInstance])
                     return
