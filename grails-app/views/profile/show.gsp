@@ -30,6 +30,20 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="profile.name.label" default="Name" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: profileInstance, field: "name")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="profile.description.label" default="Description" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: profileInstance, field: "description")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="profile.person.label" default="Person" /></td>
                             
                             <td valign="top" class="value"><g:link controller="person" action="show" id="${profileInstance?.person?.id}">${profileInstance?.person?.encodeAsHTML()}</g:link></td>

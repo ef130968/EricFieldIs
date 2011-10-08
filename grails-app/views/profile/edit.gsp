@@ -33,6 +33,24 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="name"><g:message code="profile.name.label" default="Name" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'name', 'errors')}">
+                                    <g:textField name="name" maxlength="100" value="${profileInstance?.name}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="description"><g:message code="profile.description.label" default="Description" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'description', 'errors')}">
+                                    <g:textField name="description" value="${profileInstance?.description}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="person"><g:message code="profile.person.label" default="Person" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'person', 'errors')}">
@@ -45,7 +63,14 @@
                                   <label for="projects"><g:message code="profile.projects.label" default="Projects" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'projects', 'errors')}">
-                                    <g:select name="projects" from="${ericfieldis.Project.list()}" multiple="yes" optionKey="id" size="5" value="${profileInstance?.projects*.id}" />
+                                    
+<ul>
+<g:each in="${profileInstance?.projects?}" var="p">
+    <li><g:link controller="project" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
+</g:each>
+</ul>
+<g:link controller="project" action="create" params="['profile.id': profileInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'project.label', default: 'Project')])}</g:link>
+
                                 </td>
                             </tr>
                         
@@ -54,7 +79,14 @@
                                   <label for="talents"><g:message code="profile.talents.label" default="Talents" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'talents', 'errors')}">
-                                    <g:select name="talents" from="${ericfieldis.Talent.list()}" multiple="yes" optionKey="id" size="5" value="${profileInstance?.talents*.id}" />
+                                    
+<ul>
+<g:each in="${profileInstance?.talents?}" var="t">
+    <li><g:link controller="talent" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></li>
+</g:each>
+</ul>
+<g:link controller="talent" action="create" params="['profile.id': profileInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'talent.label', default: 'Talent')])}</g:link>
+
                                 </td>
                             </tr>
                         

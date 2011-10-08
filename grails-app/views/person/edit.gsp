@@ -33,10 +33,28 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="name"><g:message code="person.name.label" default="Name" /></label>
+                                  <label for="firstName"><g:message code="person.firstName.label" default="First Name" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'name', 'errors')}">
-                                    <g:textField name="name" value="${personInstance?.name}" />
+                                <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'firstName', 'errors')}">
+                                    <g:textField name="firstName" maxlength="20" value="${personInstance?.firstName}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="middleInitial"><g:message code="person.middleInitial.label" default="Middle Initial" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'middleInitial', 'errors')}">
+                                    <g:textField name="middleInitial" maxlength="1" value="${personInstance?.middleInitial}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="lastName"><g:message code="person.lastName.label" default="Last Name" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: personInstance, field: 'lastName', 'errors')}">
+                                    <g:textField name="lastName" maxlength="20" value="${personInstance?.lastName}" />
                                 </td>
                             </tr>
                         

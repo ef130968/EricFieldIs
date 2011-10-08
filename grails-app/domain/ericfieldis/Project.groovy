@@ -7,10 +7,10 @@ class Project {
     String title
     String description
 
-    static belongsTo = [person: Person]
+    static belongsTo = [profile: Profile]
 
     static constraints = {
-        title(blank: false)
+        title(blank: false, maxSize: 100)
         description(blank: false)
     }
 }

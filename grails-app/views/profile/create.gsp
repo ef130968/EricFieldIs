@@ -30,6 +30,24 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                    <label for="name"><g:message code="profile.name.label" default="Name" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'name', 'errors')}">
+                                    <g:textField name="name" maxlength="100" value="${profileInstance?.name}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="description"><g:message code="profile.description.label" default="Description" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'description', 'errors')}">
+                                    <g:textField name="description" value="${profileInstance?.description}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                     <label for="person"><g:message code="profile.person.label" default="Person" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'person', 'errors')}">

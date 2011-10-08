@@ -30,9 +30,23 @@
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="person.name.label" default="Name" /></td>
+                            <td valign="top" class="name"><g:message code="person.firstName.label" default="First Name" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: personInstance, field: "name")}</td>
+                            <td valign="top" class="value">${fieldValue(bean: personInstance, field: "firstName")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="person.middleInitial.label" default="Middle Initial" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: personInstance, field: "middleInitial")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="person.lastName.label" default="Last Name" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: personInstance, field: "lastName")}</td>
                             
                         </tr>
                     
