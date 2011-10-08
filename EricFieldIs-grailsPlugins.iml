@@ -7,17 +7,10 @@
       <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/hibernate-1.3.7/target/test-classes" />
       <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/hibernate-1.3.7/web-app/plugins" />
     </content>
-    <content url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/release-1.0.0.M1">
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/release-1.0.0.M1/src/java" isTestSource="false" />
-      <sourceFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/release-1.0.0.M1/src/groovy" isTestSource="false" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/release-1.0.0.M1/target/classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/release-1.0.0.M1/target/test-classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/release-1.0.0.M1/web-app/plugins" />
-    </content>
-    <content url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/svn-1.0.0.M1">
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/svn-1.0.0.M1/target/classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/svn-1.0.0.M1/target/test-classes" />
-      <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/svn-1.0.0.M1/web-app/plugins" />
+    <content url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/mysql-connectorj-5.1.12">
+      <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/mysql-connectorj-5.1.12/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/mysql-connectorj-5.1.12/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/mysql-connectorj-5.1.12/web-app/plugins" />
     </content>
     <content url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/tomcat-1.3.7">
       <sourceFolder url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/tomcat-1.3.7/src/groovy" isTestSource="false" />
@@ -31,16 +24,12 @@
     <orderEntry type="module-library" exported="">
       <library name="Grails User Library (EricFieldIs-grailsPlugins)">
         <CLASSES>
-          <root url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/release-1.0.0.M1/lib" />
           <root url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/tomcat-1.3.7/lib" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.codehaus.groovy.modules.http-builder/http-builder/jars/http-builder-0.5.0.jar!/" />
-          <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.maven/maven-ant-tasks/jars/maven-ant-tasks-2.1.0.jar!/" />
-          <root url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/svn-1.0.0.M1/lib" />
+          <root url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/mysql-connectorj-5.1.12/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/release-1.0.0.M1/lib" recursive="false" />
-        <jarDirectory url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/svn-1.0.0.M1/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/mysql-connectorj-5.1.12/lib" recursive="false" />
         <jarDirectory url="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/tomcat-1.3.7/lib" recursive="false" />
       </library>
     </orderEntry>

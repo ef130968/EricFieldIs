@@ -10,8 +10,14 @@
 <html>
   <head><title>Eric Field Is Me</title></head>
   <body>Eric Field is...
-  Me
-  Design
-  Imagination
+  <br><br>
+  <div>Me</div>
+  <div>Hands-on (renovations)</div>
+  <div>Design (architecture)</div>
+  <div>Imagination</div>
+  <div>Satirical (herd it through the bovine)</div>
+  <div>Green (flexitarian, eco-friendly, etc...)</div>
+  <div>Passionate (about Nancy, against animal cruelty)</div>
+  <div>Social (mobile, coordinates)</div>
   </body>
 </html>
