@@ -1,7 +1,5 @@
 package ericfieldis
 
-import org.dom4j.tree.BackedList
-
 class Project {
 
     String title
