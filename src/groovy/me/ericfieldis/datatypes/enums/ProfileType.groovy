@@ -9,12 +9,14 @@ package me.ericfieldis.datatypes.enums
  */
 
 public enum ProfileType {
-    JOB_SEEKER('Job Seeker'),
-    JOB_PROVIDER('Job Provider')
+    JOB_SEEKER(1, 'Job Seeker'),
+    JOB_PROVIDER(2, 'Job Provider')
 
+    int id
     String name
 
-    ProfileType(String name) {
+    ProfileType(int id, String name) {
+        this.id = id
         this.name = name
     }
 
@@ -25,10 +27,31 @@ public enum ProfileType {
     String profileTypeName() {
         this.name
     }
+
+    int profileTypeId() {
+        this.id
+    }
+}
+
 /*
-    @Override
-    String toString() {
+public enum ProfileType {
+    JOB_SEEKER(0L, 'Job Seeker'),
+    JOB_PROVIDER(1L, 'Job Provider')
+
+    Long id
+    String name
+
+    ProfileType(Long id, String name) {
+        this.id = id
+        this.name = name
+    }
+
+    static list() {
+        [JOB_SEEKER, JOB_PROVIDER]
+    }
+
+    String profileTypeName() {
         this.name
     }
-*/
 }
+*/

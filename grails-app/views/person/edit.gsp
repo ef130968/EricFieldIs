@@ -1,6 +1,7 @@
 
 
 <%@ page import="ericfieldis.Person" %>
+<%@ page import="ericfieldis.profile.Profile" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -62,7 +63,16 @@
                                     <ul><g:each in="${personInstance?.profiles?}" var="p">
                                         <li><g:link controller="profile" action="show" id="${p.id}">${p?.name?.encodeAsHTML()}</g:link></li>
                                     </g:each></ul>
-                                    <g:link controller="profile" action="create" params="['person.id': personInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'profile.label', default: 'Profile')])}</g:link>
+
+                                    <g:select name="profileId" id="profileId" from="${ericfieldis.profile.Profile.list()}"
+                                              optionKey="id" optionValue="${ {it?.name} }"
+                                              noSelection="${['null]':'']}"
+                                              value="${it?.id}"/>
+                                    <g:link controller="person" action="addProfile" params="['profile.id': 1]">Add</g:link>
+
+                                    $("form").find("select", name: "profileId").value()
+
+                                    %{--<g:link controller="profile" action="create" params="['person.id': personInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'profile.label', default: 'Profile')])}</g:link>--}%
                                 </td>
                             </tr>
                         

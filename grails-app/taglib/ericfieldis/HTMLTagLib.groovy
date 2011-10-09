@@ -23,11 +23,11 @@ class HTMLTagLib {
         def bean = attrs.remove('bean')
 
         attrs.type ?: 'text'
-        attrs.gebid = com.ppc.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
+//        attrs.gebid = me.ericfieldis.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
 
         if (attrs.type != 'checkbox') attrs.value = attrs.value ?: bean?."${attrs.name}"?.encodeAsHTML()
 
-        if (com.ppc.framework.plugin.taglib.FormValidationUtils.isFieldRequired(bean, attrs.name)) attrs.required = 'required="required"'
+        if (me.ericfieldis.framework.plugin.taglib.FormValidationUtils.isFieldRequired(bean, attrs.name)) attrs.required = 'required="required"'
 
         out << g.render(template: '/taglib/html/input', model: [attrs: attrs, label: g.message(code: attrs.remove('label'))])
     }
@@ -56,7 +56,7 @@ class HTMLTagLib {
 
     def checkboxGroup = { attrs ->
         attrs.label = g.message(code: attrs.label)
-        attrs.gebid = com.ppc.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
+//        attrs.gebid = me.ericfieldis.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
 
         out << g.render(template: '/taglib/html/checkboxGroup', model: attrs)
     }
@@ -66,7 +66,7 @@ class HTMLTagLib {
 
         attrs.selected = attrs.selected ?: bean?."${attrs.name}"?.encodeAsHTML()
         attrs.label = g.message(code: attrs.label)
-        attrs.gebid = com.ppc.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
+//        attrs.gebid = me.ericfieldis.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
 
         out << g.render(template: '/taglib/html/radioGroup', model: attrs)
     }
@@ -74,12 +74,12 @@ class HTMLTagLib {
     def select = { attrs, body ->
         def bean = attrs.remove('bean')
         if (bean) {
-            attrs.required = com.ppc.framework.plugin.taglib.FormValidationUtils.isFieldRequired(bean, attrs.name) ? 'required' : ''
+            attrs.required = me.ericfieldis.framework.plugin.taglib.FormValidationUtils.isFieldRequired(bean, attrs.name) ? 'required' : ''
         }
 
         attrs.label = g.message(code: attrs.label)
-        attrs.required = com.ppc.framework.plugin.taglib.FormValidationUtils.isFieldRequired(bean, attrs.name) ? 'required' : ''
-        attrs.gebid = com.ppc.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
+        attrs.required = me.ericfieldis.framework.plugin.taglib.FormValidationUtils.isFieldRequired(bean, attrs.name) ? 'required' : ''
+//        attrs.gebid = me.ericfieldis.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
 
         if (attrs.noSelection) attrs.noSelection = ['': "${g.message(code: attrs.noSelection)}"]
 
@@ -88,7 +88,7 @@ class HTMLTagLib {
 
     def textArea = { attrs ->
         def bean = attrs.remove('bean')
-        attrs.gebid = com.ppc.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
+//        attrs.gebid = me.ericfieldis.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
 
         out << g.render(template: '/taglib/html/textarea', model: [attrs: attrs, label: g.message(code: attrs.remove('label')), value: bean?."${attrs.name}"?.encodeAsHTML()])
     }
@@ -103,7 +103,7 @@ class HTMLTagLib {
         if (attrs.encodeAsHTML == "true") {
             attrs.value = attrs.value.encodeAsHTML()
         }
-        attrs.gebid = com.ppc.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
+//        attrs.gebid = me.ericfieldis.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
 
         out << g.render(template: '/taglib/html/displayText', model: attrs)
     }
@@ -123,13 +123,13 @@ class HTMLTagLib {
     }
 
     def link = { attrs, body ->
-        attrs.gebid = com.ppc.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
+//        attrs.gebid = me.ericfieldis.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name)
 
         out << g.link(attrs, body)
     }
 
     def sortableColumn = { attrs ->
-        attrs.gebid = com.ppc.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name + "-title")
+//        attrs.gebid = me.ericfieldis.framework.test.geb.GebUtils.generateId(controllerName, actionName, attrs.name + "-title")
 
         out << g.sortableColumn(attrs)
     }

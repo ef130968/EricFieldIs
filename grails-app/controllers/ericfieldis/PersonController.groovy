@@ -1,5 +1,7 @@
 package ericfieldis
 
+import ericfieldis.person.Person
+
 class PersonController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
