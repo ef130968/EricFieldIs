@@ -1,8 +1,8 @@
-package ericfieldis.profile.components
+package ericfieldis.person
 
 import grails.test.*
 
-class TraitControllerTests extends ControllerUnitTestCase {
+class CitizenTests extends GrailsUnitTestCase {
     protected void setUp() {
         super.setUp()
     }

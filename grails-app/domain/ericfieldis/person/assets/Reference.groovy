@@ -1,4 +1,4 @@
-package ericfieldis.person.user.profile.component
+package ericfieldis.person.assets
 
 import ericfieldis.person.Person
 import ericfieldis.person.user.profile.Profile

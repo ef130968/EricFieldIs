@@ -1,6 +1,6 @@
 
 
-<%@ page import="ericfieldis.person.user.profile.component.talent.skill.Skill" %>
+<%@ page import="ericfieldis.person.assets.talent.skill.Skill" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

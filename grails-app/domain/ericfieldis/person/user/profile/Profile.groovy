@@ -5,14 +5,14 @@ import me.ericfieldis.datatypes.enums.ProfileType
 import ericfieldis.person.Person
 import ericfieldis.person.assets.Money
 import ericfieldis.person.user.profile.skin.Skin
-import ericfieldis.person.user.profile.component.Friend
-import ericfieldis.person.user.profile.component.Job
-import ericfieldis.person.user.profile.component.Opinion
-import ericfieldis.person.user.profile.component.Project
-import ericfieldis.person.user.profile.component.Reference
-import ericfieldis.person.user.profile.component.Trait
-import ericfieldis.person.user.profile.component.Value
-import ericfieldis.person.user.profile.component.talent.Talent
+import ericfieldis.person.assets.Friend
+import ericfieldis.person.assets.Job
+import ericfieldis.person.assets.Opinion
+
+import ericfieldis.person.assets.Reference
+import ericfieldis.person.assets.Trait
+import ericfieldis.person.assets.Value
+import ericfieldis.person.assets.talent.Talent
 
 class Profile {
     static belongsTo = [person: Person]

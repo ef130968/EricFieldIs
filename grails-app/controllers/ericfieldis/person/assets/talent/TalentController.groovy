@@ -1,4 +1,4 @@
-package ericfieldis.person.user.profile.component.talent
+package ericfieldis.person.assets.talent
 
 class TalentController {
 

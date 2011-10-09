@@ -1,14 +1,12 @@
-package ericfieldis.person.user.profile.component
+package ericfieldis.person.assets
 
 import ericfieldis.person.user.profile.Profile
-import ericfieldis.person.user.profile.component.talent.Talent
 
-class Job {
+class Trait {
     String title
     String description
 
     static belongsTo = [profile: Profile]
-    static hasMany = [talents: Talent]
 
     static constraints = {
         title(unique: true, blank: false, maxSize: 100)

@@ -1,4 +1,6 @@
-package ericfieldis.person.user.profile.component
+package ericfieldis.person.assets
+
+import ericfieldis.person.assets.Reference
 
 class ReferenceController {
 

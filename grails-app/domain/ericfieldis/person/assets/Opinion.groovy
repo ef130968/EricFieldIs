@@ -1,8 +1,8 @@
-package ericfieldis.person.user.profile.component
+package ericfieldis.person.assets
 
 import ericfieldis.person.user.profile.Profile
 
-class Value {
+class Opinion {
     String title
     String description
 

@@ -1,7 +1,7 @@
-package ericfieldis.person.user.profile.component.talent
+package ericfieldis.person.assets.talent
 
 import ericfieldis.person.user.profile.Profile
-import ericfieldis.person.user.profile.component.talent.skill.Skill
+import ericfieldis.person.assets.talent.skill.Skill
 
 class Talent {
 

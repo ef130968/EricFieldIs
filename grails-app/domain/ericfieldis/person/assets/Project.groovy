@@ -1,15 +1,16 @@
-package ericfieldis.person.user.profile.component
+package ericfieldis.person.assets
 
 import ericfieldis.person.user.profile.Profile
 
-class Opinion {
+class Project {
+
     String title
     String description
 
     static belongsTo = [profile: Profile]
 
     static constraints = {
-        title(unique: true, blank: false, maxSize: 100)
+        title(blank: false, maxSize: 100)
         description(blank: false)
     }
 }

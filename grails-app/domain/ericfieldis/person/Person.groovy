@@ -1,6 +1,7 @@
 package ericfieldis.person
 
 import ericfieldis.person.assets.Money
+import ericfieldis.person.citizen.coordinate.Coordinate
 
 class Person {
 

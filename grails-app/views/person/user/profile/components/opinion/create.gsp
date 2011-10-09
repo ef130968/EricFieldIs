@@ -1,4 +1,4 @@
-<%@ page import="ericfieldis.person.user.profile.component.Opinion" %>
+<%@ page import="ericfieldis.person.assets.Opinion" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
