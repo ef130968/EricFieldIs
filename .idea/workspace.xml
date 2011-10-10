@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe7720a8-f941-4f6a-abc3-7e9a6c4595d0" name="Default" comment="" />
+    <list default="true" id="fe7720a8-f941-4f6a-abc3-7e9a6c4595d0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/EricFieldIs.rtf" afterPath="$PROJECT_DIR$/doc/EricFieldIs.rtf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/This is ME.png" afterPath="$PROJECT_DIR$/doc/This is ME.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/This is US.png" afterPath="$PROJECT_DIR$/doc/This is US.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/ericfieldis/person/citizen/coordinate/Coordinate.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/person/citizen/coordinate/Coordinate.groovy" />
+    </list>
     <ignored path="EricFieldIs.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -132,10 +138,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Coordinate.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Coordinate.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/person/citizen/coordinate/Coordinate.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
+            <state line="4" column="7" selection-start="74" selection-end="74" vertical-scroll-proportion="0.10074074">
               <folding />
             </state>
           </provider>
@@ -144,10 +150,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FriendController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FriendController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/person/assets/FriendController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="6" selection-start="82" selection-end="82" vertical-scroll-proportion="0.024926687">
+            <state line="22" column="26" selection-start="593" selection-end="593" vertical-scroll-proportion="-16.26087">
               <folding />
             </state>
           </provider>
@@ -210,8 +216,8 @@
         <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/person/user/profile/component/Value.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/person/user/profile/component/talent/Talent.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/person/citizen/Citizen.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/person/citizen/coordinate/Coordinate.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/person/assets/FriendController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/person/citizen/coordinate/Coordinate.groovy" />
       </list>
     </option>
   </component>
@@ -616,7 +622,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -628,20 +634,20 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.67021275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896462" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20774193" sideWeight="0.67127657" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20774193" sideWeight="0.6710354" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33723405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -808,26 +814,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/person/citizen/coordinate/Coordinate.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/person/assets/FriendController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="82" selection-end="82" vertical-scroll-proportion="0.024926687">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/person/assets/Project.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="3" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
@@ -841,6 +827,26 @@
     <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/person/Person.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/person/assets/FriendController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="26" selection-start="593" selection-end="593" vertical-scroll-proportion="-16.26087">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/person/citizen/coordinate/Coordinate.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="7" selection-start="74" selection-end="74" vertical-scroll-proportion="0.10074074">
           <folding />
         </state>
       </provider>
