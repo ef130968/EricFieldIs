@@ -11,11 +11,7 @@
 // }
 
 //weceem.upload.dir = '/weceem_uploads/'
-<<<<<<< HEAD
 weceem.create.default.space = false
-=======
-//weceem.create.default.space = false
->>>>>>> master
 
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 grails.mime.file.extensions = false // enables the parsing of file extensions from URLs into the request format
