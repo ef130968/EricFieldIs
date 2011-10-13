@@ -1,4 +1,4 @@
-<%@ page import="ericfieldis.profile.Profile" %>
+<%@ page import="ericfieldis.person.user.profile.Profile" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>

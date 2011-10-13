@@ -13,7 +13,7 @@ class ProfileController {
 
     def list = {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
-        [profileInstanceList: Profile.list(params), profileInstanceTotal: Profile.count()]
+        render(view:'/person/user/profile/list', model: [profileInstanceList: Profile.list(params), profileInstanceTotal: Profile.count()])
     }
 
     def create = { ProfileCommand cmd ->
