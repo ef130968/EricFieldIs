@@ -13,7 +13,8 @@ target(setup: "Setup prior to executing") {
 }
 
 target(create: "Creates data in underlying database") {
-    depends(setup, drop_database, configureProxy, packageApp, classpath, loadApp, configureApp)
+    //depends(setup, drop_database, configureProxy, packageApp, classpath, loadApp, configureApp)
+    depends(setup, configureProxy, packageApp, classpath, loadApp, configureApp)
 
     try {
         def datagenesis = appCtx.getBean('dataGenesis')

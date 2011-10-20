@@ -1,6 +1,6 @@
 
 
-<%@ page import="ericfieldis.Person" %>
+<%@ page import="ericfieldis.entity" %>
 <%@ page import="ericfieldis.profile.Profile" %>
 <html>
     <head>

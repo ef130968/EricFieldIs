@@ -1,5 +1,5 @@
 
-<%@ page import="ericfieldis.person.Person" %>
+<%@ page import="ericfieldis.entity.Entity" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

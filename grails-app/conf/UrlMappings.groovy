@@ -1,17 +1,21 @@
+import grails.plugins.springsecurity.Secured
+
 class UrlMappings {
 
 	static mappings = {
-/*
-		"/$controller/$action?/$id?"{
+        "500" (view:'/error')
+		"/$controller/$action?/$id?" {
 			constraints {
 				// apply constraints here
 			}
 		}
-*/
+        "/" (controller: "profile", action: "me")
 
-//        "/"(view:"/home/main")
-//        "/"(view:"/index")
-		"500"(view:'/error')
- 	}
+        def adminURI = "/${WeceemPluginUrlMappings.ADMIN_PREFIX}"
+        invokeMethod(adminURI, {
+            controller = "profile"
+            action = "admin"
+        })
+    }
 
 }

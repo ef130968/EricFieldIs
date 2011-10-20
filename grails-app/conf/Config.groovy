@@ -12,6 +12,9 @@
 
 //weceem.upload.dir = '/weceem_uploads/'
 weceem.create.default.space = false
+weceem.logout.url = [controller: 'logout']
+weceem.profile.url = [controller: 'profile', action: 'me']
+//weceem.admin.prefix = 'wcm-admin'
 
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 grails.mime.file.extensions = false // enables the parsing of file extensions from URLs into the request format
@@ -90,4 +93,53 @@ log4j = {
            'net.sf.ehcache.hibernate'
 
     warn   'org.mortbay.log'
+}
+
+grails.views.javascript.library = "jquery"
+//grails.validateable.packages = [''] // define validateable classes here that are not part of the domain model. Add @Validateable to actual class.
+
+weceem.security.policy.path = "http://localhost:8080/${appName}/grails-app/conf/Policies.groovy"
+
+// Added by the Spring Security Core plugin:
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'ericfieldis.entity.user.User'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'ericfieldis.entity.user.UserRole'
+grails.plugins.springsecurity.authority.className = 'ericfieldis.entity.user.Role'
+grails.plugins.springsecurity.securityConfigType = grails.plugins.springsecurity.SecurityConfigType.Annotation  // Allows secure access using @Secured(['ROLE_ADMIN'])
+grails.plugins.springsecurity.logout.afterLogoutUrl = '/profile/me'
+//grails.plugins.springsecurity.successHandler.defaultTargetUrl = '/profile/me'
+//grails.plugins.springsecurity.alwaysUseDefault = true
+//grails.plugins.springsecurity.apf.filterProcessesUrl = "/profile/me"
+//grails.plugins.springsecurity.rejectIfNoRule = true
+//grails.plugins.springsecurity.userLookup.usernamePropertyName = 'email'
+//grails.plugins.springsecurity.dao.reflectionSaltSourceProperty = 'username'
+// <sec:ifAnyGranted roles="ROLE_ADMIN">
+// Secured section here
+// </sec:ifAnyGranted>
+
+grails.plugins.springsecurity.controllerAnnotations.staticRules = [
+    "/login/**": ["permitAll"],
+    "/logout/**": ["permitAll"],
+    "/profile/me": ["permitAll"],
+    "/me/**": ["permitAll"],
+    "/profile/admin": ["hasRole('ROLE_ADMIN')"],
+    "/wcm/admin/**": ["hasRole('ROLE_ADMIN')"],
+
+    "/WeceemFiles/**": ["permitAll"],
+    "/css/**": ["permitAll"],
+    "/images/**": ["permitAll"],
+    "/js/**": ["permitAll"],
+    "/plugins/**": ["permitAll"],
+
+    "/me/images/**": ["permitAll"],
+    "/_ROOT/images/**": ["permitAll"]
+]
+
+weceem.springsecurity.details.mapper = { ->
+    [ // Stuff required by weceem spring sec
+        username: username,
+        password: password,
+        enabled: enabled,
+        authorities: authorities,
+        email: email
+    ]
 }

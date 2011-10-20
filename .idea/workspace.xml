@@ -2,10 +2,111 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe7720a8-f941-4f6a-abc3-7e9a6c4595d0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/efield.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/conf/Policies.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/Entity.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/citizen/Citizen.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/User2.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/coordinate/Coordinate.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/assets/Friend.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/assets/Reference.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/bootstrap/database/creator/AbstractDataCreator.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/bootstrap/database/creator/AbstractXMLParsingDataCreator.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/me/ericfieldis/genesis/EntityDataCreator.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/me/ericfieldis/genesis/xml/Entities.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/ericfieldis/entity/CitizenTests.groovy" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\doc\EricFieldIs.rtf" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\doc\This is ME.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\doc\This is US.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\PersonController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\assets\FriendController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\assets\JobController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\assets\MoneyController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\assets\OpinionController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\assets\ProjectController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\assets\ReferenceController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\assets\TraitController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\assets\ValueController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\assets\talent\TalentController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\assets\talent\skill\SkillController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\user\profile\ProfileController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\user\profile\skin\SkinController.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\Person.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\assets\Friend.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\assets\Reference.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\citizen\Citizen.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\citizen\coordinate\Coordinate.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\user\User.groovy" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\Image\arrows-ffffff.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\Image\cow_avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\Image\cow_image.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\Image\user_image_outline.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\Image\weceem-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\images\shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\LGPLv3.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\scripts\clipboard.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\scripts\shBrushCss.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\scripts\shBrushGroovy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\scripts\shBrushJScript.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\scripts\shBrushJava.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\scripts\shBrushPhp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\scripts\shBrushPlain.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\scripts\shBrushXml.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\scripts\shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\styles\help.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\styles\magnifier.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\styles\page_white_code.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\styles\page_white_copy.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\styles\printer.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\styles\shCore.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\src\EricFieldIs\web-app\WeceemFiles\_ROOT\resources\syntaxhighlighter\styles\shThemeDefault.css" afterPath="" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\command\ericfieldis\person\user\profile\ProfileCommand.groovy" afterPath="$PROJECT_DIR$/grails-app/command/ericfieldis/entity/user/profile/ProfileCommand.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\controllers\ericfieldis\person\user\UserController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/ericfieldis/entity/user/UserController.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\assets\Job.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/assets/Job.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\assets\Money.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/assets/Money.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\assets\Opinion.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/assets/Opinion.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\assets\Project.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/assets/Project.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\assets\Trait.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/assets/Trait.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\assets\Value.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/assets/Value.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\assets\talent\Talent.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/assets/talent/Talent.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\assets\talent\skill\Skill.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/assets/talent/skill/Skill.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\user\profile\Profile.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/Profile.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\grails-app\domain\ericfieldis\person\user\profile\skin\Skin.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/skin/Skin.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\test\unit\ericfieldis\person\CitizenTests.groovy" afterPath="$PROJECT_DIR$/test/unit/ericfieldis/entity/user/role/RoleTests.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\test\unit\ericfieldis\person\CoordinateTests.groovy" afterPath="$PROJECT_DIR$/test/unit/ericfieldis/entity/CoordinateTests.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\test\unit\ericfieldis\person\assets\CoordinateTests.groovy" afterPath="$PROJECT_DIR$/test/unit/ericfieldis/entity/assets/CoordinateTests.groovy" />
+      <change type="MOVED" beforePath="C:\src\EricFieldIs\test\unit\ericfieldis\person\user\profile\LookingForSomeoneTests.groovy" afterPath="$PROJECT_DIR$/test/unit/ericfieldis/entity/user/profile/LookingForSomeoneTests.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EricFieldIs-grailsPlugins.iml" afterPath="$PROJECT_DIR$/EricFieldIs-grailsPlugins.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EricFieldIs.iml" afterPath="$PROJECT_DIR$/EricFieldIs.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/i18n/messages.properties" afterPath="$PROJECT_DIR$/grails-app/i18n/messages.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/assets/money/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/assets/money/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/assets/money/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/assets/money/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/assets/money/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/assets/money/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/assets/money/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/assets/money/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/user/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/user/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/user/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/user/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/user/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/user/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/person/user/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/person/user/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/components/job/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/components/job/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/components/opinion/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/components/opinion/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/components/opinion/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/components/opinion/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/components/talent/skill/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/components/talent/skill/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/profile/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/profile/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/taglib/html/_textarea.gsp" afterPath="$PROJECT_DIR$/grails-app/views/taglib/html/_textarea.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/DataGenesis.groovy" afterPath="$PROJECT_DIR$/scripts/DataGenesis.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/bootstrap/database/DataGenesis.groovy" afterPath="$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/bootstrap/database/DataGenesis.groovy" />
     </list>
     <ignored path="EricFieldIs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,6 +126,34 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/entity/user/LoginController.groovy" line="133" class="ericfieldis.entity.user.LoginController" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/entity/user/LoginController.groovy" line="126" class="ericfieldis.entity.user.LoginController" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -65,19 +194,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProfileController.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/person/user/profile/ProfileController.groovy">
+      <file leaf-file-name="Config.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="37" selection-start="717" selection-end="717" vertical-scroll-proportion="0.3876853">
+            <state line="122" column="44" selection-start="5499" selection-end="5499" vertical-scroll-proportion="0.73519737">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <file leaf-file-name="Policies.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/Policies.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="83" selection-start="668" selection-end="668" vertical-scroll-proportion="-8.5">
+            <state line="2" column="16" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UrlMappings.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="33" selection-start="383" selection-end="390" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/entity/user/profile/ProfileController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/entity/user/LoginController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="0" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,21 +258,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/person/user/profile/component/Trait.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/person/user/profile/component/Value.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/person/user/profile/component/talent/Talent.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/person/citizen/Citizen.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/person/assets/FriendController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/person/citizen/coordinate/Coordinate.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/person/assets/talent/skill/AdminController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/AdminController.groovy" />
-        <option value="$PROJECT_DIR$/scripts/CleanDatabase.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/profile/list.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/person/user/profile/create.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/person/user/profile/ProfileController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+        <option value="$PROJECT_DIR$/src/groovy/me/ericfieldis/framework/plugin/bootstrap/database/DataGenesis.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/business/Business.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/Entity.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/citizen/Citizen.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/User.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/me/ericfieldis/genesis/EntityDataCreator.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/me/ericfieldis/genesis/xml/Entities.xml" />
+        <option value="$PROJECT_DIR$/scripts/DataGenesis.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/i18n/messages.properties" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/entity/user/LoginController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/entity/user/LogoutController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/Policies.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/ericfieldis/entity/user/profile/ProfileController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
       </list>
     </option>
@@ -187,33 +343,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
+              <option name="myItemId" value="grails-app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WeceemFiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EricFieldIs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EricFieldIs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeceemFiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_ROOT" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -227,19 +361,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
+              <option name="myItemId" value="grails-app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WeceemFiles" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_ROOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Image" />
+              <option name="myItemId" value="profile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,7 +383,111 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ericfieldis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ericfieldis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EricFieldIs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,46 +499,65 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="278" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="296" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="RESOURCE_BUNDLE_SPLITTER_PROPORTION" value="0.5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
     <property name="recentsLimit" value="5" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="292" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="297" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="971" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="967" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="292" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="291" />
     <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="RESOURCE_BUNDLE_SPLITTER_PROPORTION" value="0.5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.ericfieldis.genesis" />
       <recent name="me.ericfieldis.framework.plugin.taglib" />
       <recent name="me.ericfieldis.framework.plugin.bootstrap.database.creator" />
       <recent name="me.ericfieldis.framework.plugin.bootstrap.database" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\src\EricFieldIs\src\groovy\me\ericfieldis\genesis\xml" />
+      <recent name="C:\src\EricFieldIs\src\groovy\me\ericfieldis\framework\plugin\bootstrap\database\creator" />
       <recent name="C:\src\EricFieldIs\grails-app\views\taglib\html" />
       <recent name="C:\src\EricFieldIs\scripts" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ericfieldis.entity.user" />
       <recent name="ericfieldis" />
       <recent name="ericfieldis.person.assets.talent.skill" />
       <recent name="ericfieldis.person.assets.talent" />
       <recent name="ericfieldis.person.assets" />
-      <recent name="ericfieldis.person.assets.component.talent.skill" />
     </key>
   </component>
   <component name="RunManager" selected="Grails.Grails:EricFieldIs">
@@ -511,32 +764,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="-188" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38791946" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34332988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33617023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.67021275" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.61276597" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32883817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2737968" sideWeight="0.6638298" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29299363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19679144" sideWeight="0.6566701" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2925532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33506224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40629095" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40434334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327818" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -588,86 +841,93 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/person/user/create.gsp">
+    <entry file="jar://C:/pgms/grails-1.3.7/lib/groovy-all-1.7.8.jar!/org/codehaus/groovy/runtime/callsite/PogoMetaMethodSite.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="10" selection-start="760" selection-end="760" vertical-scroll-proportion="0.6322314" />
+        <state line="66" column="32" selection-start="5161" selection-end="5303" vertical-scroll-proportion="0.78881985" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/command/ericfieldis/person/user/profile/ProfileCommand.groovy">
+    <entry file="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/weceem-1.0/grails-app/views/wcmEditor/edit.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="286" selection-end="286" vertical-scroll-proportion="0.13883677" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/i18n/messages.properties">
-      <provider editor-type-id="ResourceBundle">
+    <entry file="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/weceem-1.0/grails-app/taglib/org/weceem/tags/AdminTagLib.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.28145695" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/pgms/grails-1.3.7/lib/groovy-all-1.7.8.jar!/groovy/lang/GroovyObjectSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="28" selection-start="573" selection-end="573" vertical-scroll-proportion="0.41105354" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="67" selection-start="2326" selection-end="2326" vertical-scroll-proportion="1.3080082" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/ericfieldis/entity/user/profile/Profile.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="6" selection-start="611" selection-end="611" vertical-scroll-proportion="-1.3368984" />
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/entity/user/UserController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="18" selection-start="2218" selection-end="2236" vertical-scroll-proportion="0.3319672" />
+        <state line="29" column="0" selection-start="870" selection-end="942" vertical-scroll-proportion="0.8679578" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+    <entry file="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/weceem-1.0/grails-app/views/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5294118" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/entity/user/LogoutController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="37" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0" />
+        <state line="3" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.08777969" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/spring/resources.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Policies.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://C:/pgms/grails-1.3.7/src/java/org/codehaus/groovy/grails/plugins/web/taglib/ApplicationTagLib.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="8" selection-start="6184" selection-end="6184" vertical-scroll-proportion="0.92115384" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/weceem-1.0/grails-app/views/denied.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="89" selection-start="907" selection-end="907" vertical-scroll-proportion="0.9672414" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="45" selection-start="1837" selection-end="1837" vertical-scroll-proportion="-1.6327684" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="2" column="16" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="2" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" />
+        <state line="15" column="33" selection-start="383" selection-end="390" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.grails/1.3.7/projects/EricFieldIs/plugins/weceem-1.0/web-app/_weceem/css/admin.css">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/entity/user/profile/ProfileController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="65" selection-start="271" selection-end="271" vertical-scroll-proportion="0.17085427">
+        <state line="16" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/entity/user/LoginController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="83" selection-start="668" selection-end="668" vertical-scroll-proportion="-8.5">
+        <state line="70" column="0" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/ericfieldis/person/user/profile/ProfileController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/login/auth.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="37" selection-start="717" selection-end="717" vertical-scroll-proportion="0.3876853">
+        <state line="95" column="32" selection-start="2096" selection-end="2106" vertical-scroll-proportion="0.27497193">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="44" selection-start="5499" selection-end="5499" vertical-scroll-proportion="0.73519737">
           <folding />
         </state>
       </provider>
@@ -680,7 +940,7 @@
           <value>
             <GrailsSettings>
               <option name="buildConfigCrc" value="1399079209" />
-              <option name="pluginDependenciesCrc" value="-643140596" />
+              <option name="pluginDependenciesCrc" value="-1955275457" />
               <option name="properties">
                 <map>
                   <entry key="grails.project.class.dir" value="target/classes" />

@@ -6,12 +6,6 @@ import groovy.time.TimeDuration
 import org.hibernate.Session
 import org.hibernate.Transaction
 
-/**
- * Created by vincentgiguere 
- * 11-05-31 - 4:01 PM
- * Copyright © 2011 publicprivatecareer.com
- */
-
 class DataGenesis {
 
     List<me.ericfieldis.framework.plugin.bootstrap.database.creator.IDataCreator> creators

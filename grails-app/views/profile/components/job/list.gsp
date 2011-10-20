@@ -1,4 +1,4 @@
-<%@ page import="ericfieldis.person.assets.Job" %>
+<%@ page import="ericfieldis.entity.user.profile.assets.Job" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>

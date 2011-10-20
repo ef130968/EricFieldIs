@@ -1,0 +1,13 @@
+<entities>
+    <entity>
+        <citizen firstName="Eric" middleInitial="S" lastName="Field">
+            <user email="ef130968@hotmail.com" username="ef130968" password="fierik">
+                <role>ROLE_ADMIN</role>
+            </user>
+        </citizen>
+    </entity>
+    <entity>
+        <business>
+        </business>
+    </entity>
+</entities>
