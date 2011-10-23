@@ -1,6 +1,10 @@
 package ericfieldis.entity.user.profile
 
 import grails.plugins.springsecurity.Secured
+import ericfieldis.entity.user.User
+import grails.plugins.springsecurity.SpringSecurityService
+import org.springframework.security.core.userdetails.UserDetails
+import org.springframework.security.core.context.SecurityContextHolder
 
 class ProfileController {
 

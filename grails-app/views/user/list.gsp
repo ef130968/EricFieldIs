@@ -1,4 +1,4 @@
-<%@ page import="ericfieldis.entity.user.User2" %>
+<%@ page import="ericfieldis.entity.user.User" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -27,6 +27,20 @@
 
                 <g:sortableColumn property="id" title="${message(code: 'user.id.label', default: 'Id')}"/>
 
+                <g:sortableColumn property="username"
+                                  title="${message(code: 'user.username.label', default: 'Username')}"/>
+
+                <g:sortableColumn property="password"
+                                  title="${message(code: 'user.password.label', default: 'Password')}"/>
+
+                <g:sortableColumn property="avatar" title="${message(code: 'user.avatar.label', default: 'Avatar')}"/>
+
+                <g:sortableColumn property="accountExpired"
+                                  title="${message(code: 'user.accountExpired.label', default: 'Account Expired')}"/>
+
+                <g:sortableColumn property="accountLocked"
+                                  title="${message(code: 'user.accountLocked.label', default: 'Account Locked')}"/>
+
             </tr>
             </thead>
             <tbody>
@@ -35,6 +49,16 @@
 
                     <td><g:link action="show"
                                 id="${userInstance.id}">${fieldValue(bean: userInstance, field: "id")}</g:link></td>
+
+                    <td>${fieldValue(bean: userInstance, field: "username")}</td>
+
+                    <td>${fieldValue(bean: userInstance, field: "password")}</td>
+
+                    <td>${fieldValue(bean: userInstance, field: "avatar")}</td>
+
+                    <td><g:formatBoolean boolean="${userInstance.accountExpired}"/></td>
+
+                    <td><g:formatBoolean boolean="${userInstance.accountLocked}"/></td>
 
                 </tr>
             </g:each>

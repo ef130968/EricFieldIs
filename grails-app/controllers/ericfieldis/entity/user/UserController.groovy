@@ -1,5 +1,9 @@
 package ericfieldis.entity.user
 
+import ericfieldis.FileUploadService
+import org.springframework.security.core.context.SecurityContextHolder
+import org.springframework.security.core.Authentication
+
 class UserController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -10,17 +14,17 @@ class UserController {
 
     def list = {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
-        [userInstanceList: User2.list(params), userInstanceTotal: User2.count()]
+        [userInstanceList: User.list(params), userInstanceTotal: User.count()]
     }
 
     def create = {
-        def userInstance = new User2()
+        def userInstance = new User()
         userInstance.properties = params
         return [userInstance: userInstance]
     }
 
     def save = {
-        def userInstance = new User2(params)
+        def userInstance = new User(params)
         if (userInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
             redirect(action: "show", id: userInstance.id)
@@ -31,7 +35,7 @@ class UserController {
     }
 
     def show = {
-        def userInstance = User2.get(params.id)
+        def userInstance = User.get(params.id)
         if (!userInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'user.label', default: 'User'), params.id])}"
             redirect(action: "list")
@@ -42,7 +46,7 @@ class UserController {
     }
 
     def edit = {
-        def userInstance = User2.get(params.id)
+        def userInstance = User.get(params.id)
         if (!userInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'user.label', default: 'User'), params.id])}"
             redirect(action: "list")
@@ -53,7 +57,19 @@ class UserController {
     }
 
     def update = {
-        def userInstance = User2.get(params.id)
+        User userInstance
+
+        if(params.subaction == 'uploadAvatarFile') {
+            Authentication authentication = SecurityContextHolder.getContext().getAuthentication()
+            userInstance = User.findByUsername(authentication.principal.username)
+            def avatarImage = request.getFile('avatarFile')
+            FileUploadService fileUploadService = new FileUploadService()
+            params.avatar = fileUploadService.uploadFile(avatarImage, "${userInstance.username}.png", "WeceemFiles/me/avatars")
+            //params.avatar = fileUploadService.uploadFile(avatarImage, "${userInstance.username}.png", "avatars")
+        } else {
+            userInstance = User.get(params.id)
+        }
+
         if (userInstance) {
             if (params.version) {
                 def version = params.version.toLong()
@@ -64,10 +80,15 @@ class UserController {
                     return
                 }
             }
+
             userInstance.properties = params
             if (!userInstance.hasErrors() && userInstance.save(flush: true)) {
                 flash.message = "${message(code: 'default.updated.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
-                redirect(action: "show", id: userInstance.id)
+                if(params.subaction == 'uploadAvatarFile') {
+                    redirect(controller: "me", action: "settings")
+                } else {
+                    redirect(action: "show", id: userInstance.id)
+                }
             }
             else {
                 render(view: "edit", model: [userInstance: userInstance])
@@ -80,7 +101,7 @@ class UserController {
     }
 
     def delete = {
-        def userInstance = User2.get(params.id)
+        def userInstance = User.get(params.id)
         if (userInstance) {
             try {
                 userInstance.delete(flush: true)

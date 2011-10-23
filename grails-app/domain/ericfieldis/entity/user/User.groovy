@@ -15,10 +15,12 @@ class User {
     boolean accountExpired = false
     boolean accountLocked = false
     boolean passwordExpired = false
+    String avatar
 
     static constraints = {
         username blank: false, unique: true
         password blank: false
+        avatar nullable: true
     }
 
     static mapping = {

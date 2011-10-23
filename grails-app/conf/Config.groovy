@@ -109,7 +109,7 @@ grails.plugins.springsecurity.logout.afterLogoutUrl = '/profile/me'
 //grails.plugins.springsecurity.successHandler.defaultTargetUrl = '/profile/me'
 //grails.plugins.springsecurity.alwaysUseDefault = true
 //grails.plugins.springsecurity.apf.filterProcessesUrl = "/profile/me"
-//grails.plugins.springsecurity.rejectIfNoRule = true
+grails.plugins.springsecurity.rejectIfNoRule = true
 //grails.plugins.springsecurity.userLookup.usernamePropertyName = 'email'
 //grails.plugins.springsecurity.dao.reflectionSaltSourceProperty = 'username'
 // <sec:ifAnyGranted roles="ROLE_ADMIN">
@@ -117,21 +117,30 @@ grails.plugins.springsecurity.logout.afterLogoutUrl = '/profile/me'
 // </sec:ifAnyGranted>
 
 grails.plugins.springsecurity.controllerAnnotations.staticRules = [
-    "/login/**": ["permitAll"],
-    "/logout/**": ["permitAll"],
-    "/profile/me": ["permitAll"],
-    "/me/**": ["permitAll"],
+    "/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+    "/login/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+    "/logout/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+
+    "/profile/me": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+    "/profile/profile": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/profile/admin": ["hasRole('ROLE_ADMIN')"],
+    "/profile/**": ["IS_AUTHENTICATED_FULLY"],
+
+    "/user/**": ["IS_AUTHENTICATED_FULLY"],
+
+    "/_ROOT/images/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+    "/me/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+    //"/me/avatars/**": ["hasRole('ROLE_ADMIN')"],
+    "/me/images/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/wcm/admin/**": ["hasRole('ROLE_ADMIN')"],
 
-    "/WeceemFiles/**": ["permitAll"],
-    "/css/**": ["permitAll"],
-    "/images/**": ["permitAll"],
-    "/js/**": ["permitAll"],
-    "/plugins/**": ["permitAll"],
-
-    "/me/images/**": ["permitAll"],
-    "/_ROOT/images/**": ["permitAll"]
+    "/css/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+    "/images/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+    "/avatars/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+    "/js/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+    "/plugins/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+    "/WeceemFiles/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+    //"/WeceemFiles/me/avatars/ef130968.png": ["hasRole('ROLE_ADMIN')"]
 ]
 
 weceem.springsecurity.details.mapper = { ->

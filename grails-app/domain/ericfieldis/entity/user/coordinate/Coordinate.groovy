@@ -1,12 +1,12 @@
 package ericfieldis.entity.user.coordinate
 
-import ericfieldis.entity.user.User2
+import ericfieldis.entity.user.User
 
 class Coordinate {
 
     // Location location
 
-    static belongsTo = [user: User2]
+    static belongsTo = [user: User]
 
     static constraints = {
     }

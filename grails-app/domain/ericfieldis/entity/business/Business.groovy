@@ -2,7 +2,7 @@ package ericfieldis.entity.business
 
 import ericfieldis.entity.Entity
 
-import ericfieldis.entity.user.User2
+import ericfieldis.entity.user.User
 
 class Business {
 
@@ -10,7 +10,7 @@ class Business {
 
     String name
 
-    User2 user;
+    User user;
     //Coordinate coordinate
 
     static constraints = {
