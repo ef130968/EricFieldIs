@@ -1,0 +1,1 @@
+mysql -u root -proot -D ericfieldis_development -e "show tables" -s | findstr /V /R "^wcm_" | xargs -I "@@" mysql -u root -proot -D ericfieldis_development -e "SET foreign_key_checks= 0; DROP TABLE @@;"
