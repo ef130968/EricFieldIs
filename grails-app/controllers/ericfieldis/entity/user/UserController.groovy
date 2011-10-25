@@ -3,6 +3,8 @@ package ericfieldis.entity.user
 import ericfieldis.FileUploadService
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.core.Authentication
+import org.springframework.web.multipart.MultipartHttpServletRequest
+import org.springframework.web.multipart.commons.CommonsMultipartFile
 
 class UserController {
 
@@ -56,47 +58,56 @@ class UserController {
         }
     }
 
+    def getAvatar = {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication()
+        User userInstance = User.findByUsername(authentication.principal.username)
+        response.getOutputStream().write(userInstance.avatar)
+        response.getOutputStream().flush()
+    }
+
     def update = {
         User userInstance
 
         if(params.subaction == 'uploadAvatarFile') {
-            Authentication authentication = SecurityContextHolder.getContext().getAuthentication()
-            userInstance = User.findByUsername(authentication.principal.username)
-            def avatarImage = request.getFile('avatarFile')
-            FileUploadService fileUploadService = new FileUploadService()
-            params.avatar = fileUploadService.uploadFile(avatarImage, "${userInstance.username}.png", "WeceemFiles/me/avatars")
-            //params.avatar = fileUploadService.uploadFile(avatarImage, "${userInstance.username}.png", "avatars")
-        } else {
-            userInstance = User.get(params.id)
-        }
-
-        if (userInstance) {
-            if (params.version) {
-                def version = params.version.toLong()
-                if (userInstance.version > version) {
-
-                    userInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'user.label', default: 'User')] as Object[], "Another user has updated this User while you were editing")
-                    render(view: "edit", model: [userInstance: userInstance])
-                    return
-                }
+            if(request instanceof MultipartHttpServletRequest) {
+                MultipartHttpServletRequest multiRequest = (MultipartHttpServletRequest) request;
+                Authentication authentication = SecurityContextHolder.getContext().getAuthentication()
+                userInstance = User.findByUsername(authentication.principal.username)
+                CommonsMultipartFile avatarFile = (CommonsMultipartFile) multiRequest.getFile("avatarFile");
+                FileUploadService fileUploadService = new FileUploadService()
+                //params.avatar = fileUploadService.uploadFileToDisk(avatarImage, "${userInstance.username}.png", "WeceemFiles/me/avatars")
+                fileUploadService.uploadFileToDB(avatarFile, userInstance)
+                redirect(controller: "me", action: "settings")
             }
+        }
+        else
+        {
+            userInstance = User.get(params.id)
 
-            userInstance.properties = params
-            if (!userInstance.hasErrors() && userInstance.save(flush: true)) {
-                flash.message = "${message(code: 'default.updated.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
-                if(params.subaction == 'uploadAvatarFile') {
-                    redirect(controller: "me", action: "settings")
-                } else {
+            if (userInstance) {
+                if (params.version) {
+                    def version = params.version.toLong()
+                    if (userInstance.version > version) {
+
+                        userInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'user.label', default: 'User')] as Object[], "Another user has updated this User while you were editing")
+                        render(view: "edit", model: [userInstance: userInstance])
+                        return
+                    }
+                }
+
+                userInstance.properties = params
+                if (!userInstance.hasErrors() && userInstance.save(flush: true)) {
+                    flash.message = "${message(code: 'default.updated.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
                     redirect(action: "show", id: userInstance.id)
+                }
+                else {
+                    render(view: "edit", model: [userInstance: userInstance])
                 }
             }
             else {
-                render(view: "edit", model: [userInstance: userInstance])
+                flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'user.label', default: 'User'), params.id])}"
+                redirect(action: "list")
             }
-        }
-        else {
-            flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'user.label', default: 'User'), params.id])}"
-            redirect(action: "list")
         }
     }
 

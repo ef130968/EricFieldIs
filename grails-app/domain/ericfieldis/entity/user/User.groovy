@@ -15,16 +15,17 @@ class User {
     boolean accountExpired = false
     boolean accountLocked = false
     boolean passwordExpired = false
-    String avatar
+    byte[] avatar
 
     static constraints = {
         username blank: false, unique: true
         password blank: false
-        avatar nullable: true
+        avatar nullable: true//, maxSize: 1073741824 // max 4GB file
     }
 
     static mapping = {
-        password column: '`password`'
+        password column: 'password'
+        avatar sqlType: 'longblob'
     }
 
     Set<Role> getAuthorities() {
