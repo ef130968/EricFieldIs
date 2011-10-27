@@ -31,7 +31,7 @@ class EntityDataCreator extends AbstractXMLParsingDataCreator<Entity> {
                     }
 
                     user.role.each { role ->
-                        new UserRole(user: user, role: createRole(role.text())).save()
+                        UserRole.create(newUser, createRole(role.text()))
                     }
                 }
             }

@@ -1,10 +1,10 @@
 package ericfieldis.entity.user.profile
 
-import grails.plugins.springsecurity.Secured
 import ericfieldis.entity.user.User
-import grails.plugins.springsecurity.SpringSecurityService
-import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.context.SecurityContextHolder
+import org.springframework.security.core.Authentication
+import org.weceem.controllers.WcmContentController
+import javax.servlet.http.Cookie
 
 class ProfileController {
 
@@ -13,11 +13,20 @@ class ProfileController {
     def springSecurityUtils
 
     def me = {
-        redirect(action: "profile")
-    }
-
-    def profile = {
-        redirect(uri: "/me/index?" + java.util.UUID.randomUUID())
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication()
+        if(authentication.principal != "anonymousUser") {
+            User userInstance = User.findByUsername(authentication.principal.username)
+            if (userInstance) {
+                request[WcmContentController.REQUEST_ATTRIBUTE_PREPARED_MODEL] = [userInstance: userInstance]
+                def uri = '/me/index'
+                params.clear()
+                params.uri = uri
+                forward(controller: 'wcmContent', action: 'show', params: params)
+            }
+        }
+        else {
+            redirect(controller: "me", action: "index")
+        }
     }
 
     def admin = {

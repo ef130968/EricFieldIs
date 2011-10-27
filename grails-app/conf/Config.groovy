@@ -105,10 +105,10 @@ grails.plugins.springsecurity.userLookup.userDomainClassName = 'ericfieldis.enti
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'ericfieldis.entity.user.UserRole'
 grails.plugins.springsecurity.authority.className = 'ericfieldis.entity.user.Role'
 grails.plugins.springsecurity.securityConfigType = grails.plugins.springsecurity.SecurityConfigType.Annotation  // Allows secure access using @Secured(['ROLE_ADMIN'])
-grails.plugins.springsecurity.logout.afterLogoutUrl = '/profile/me'
-//grails.plugins.springsecurity.successHandler.defaultTargetUrl = '/profile/me'
-//grails.plugins.springsecurity.alwaysUseDefault = true
-//grails.plugins.springsecurity.apf.filterProcessesUrl = "/profile/me"
+grails.plugins.springsecurity.logout.afterLogoutUrl = '/user/logout'
+grails.plugins.springsecurity.successHandler.defaultTargetUrl = '/user/login'
+grails.plugins.springsecurity.alwaysUseDefault = true
+//grails.plugins.springsecurity.apf.filterProcessesUrl = ''
 grails.plugins.springsecurity.rejectIfNoRule = true
 //grails.plugins.springsecurity.userLookup.usernamePropertyName = 'email'
 //grails.plugins.springsecurity.dao.reflectionSaltSourceProperty = 'username'
@@ -122,15 +122,15 @@ grails.plugins.springsecurity.controllerAnnotations.staticRules = [
     "/logout/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
 
     "/profile/me": ["IS_AUTHENTICATED_ANONYMOUSLY"],
-    "/profile/profile": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/profile/admin": ["hasRole('ROLE_ADMIN')"],
     "/profile/**": ["IS_AUTHENTICATED_FULLY"],
 
+    "/user/login": ["IS_AUTHENTICATED_ANONYMOUSLY"],
+    "/user/logout": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/user/**": ["IS_AUTHENTICATED_FULLY"],
 
     "/_ROOT/images/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/me/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
-    //"/me/avatars/**": ["hasRole('ROLE_ADMIN')"],
     "/me/images/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/wcm/admin/**": ["hasRole('ROLE_ADMIN')"],
 
@@ -140,7 +140,6 @@ grails.plugins.springsecurity.controllerAnnotations.staticRules = [
     "/js/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/plugins/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/WeceemFiles/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
-    //"/WeceemFiles/me/avatars/ef130968.png": ["hasRole('ROLE_ADMIN')"]
 ]
 
 weceem.springsecurity.details.mapper = { ->
