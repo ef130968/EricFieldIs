@@ -2,7 +2,7 @@ package ericfieldis
 
 import grails.test.*
 
-class FileUploadServiceTests extends GrailsUnitTestCase {
+class FileManagementServiceTests extends GrailsUnitTestCase {
     protected void setUp() {
         super.setUp()
     }

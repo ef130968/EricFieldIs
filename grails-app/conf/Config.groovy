@@ -123,11 +123,12 @@ grails.plugins.springsecurity.controllerAnnotations.staticRules = [
 
     "/profile/me": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/profile/admin": ["hasRole('ROLE_ADMIN')"],
-    "/profile/**": ["IS_AUTHENTICATED_FULLY"],
+    "/profile/**": ["hasRole('ROLE_ADMIN')"],
 
     "/user/login": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/user/logout": ["IS_AUTHENTICATED_ANONYMOUSLY"],
-    "/user/**": ["IS_AUTHENTICATED_FULLY"],
+    "/user/updateByUser": ["hasAnyRole('ROLE_ADMIN', 'ROLE_USER')"],
+    "/user/**": ["hasRole('ROLE_ADMIN')"],
 
     "/_ROOT/images/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/me/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],

@@ -1,8 +1,19 @@
 <entities>
     <entity>
-        <citizen firstName="Eric" middleInitial="S" lastName="Field">
-            <user email="ef130968@hotmail.com" username="ef130968" password="fierik">
+        <citizen firstName="User" lastName="User">
+            <user email="user@thisisme.com" username="user" password="user">
+                <role>ROLE_USER</role>
+            </user>
+        </citizen>
+        <citizen firstName="Admin" lastName="Admin">
+            <user email="admin@thisisme.com" username="admin" password="admin">
                 <role>ROLE_ADMIN</role>
+            </user>
+        </citizen>
+        <citizen firstName="AdminUser" lastName="AdminUser">
+            <user email="adminuser@thisisme.com" username="adminuser" password="adminuser">
+                <role>ROLE_ADMIN</role>
+                <role>ROLE_USER</role>
             </user>
         </citizen>
     </entity>

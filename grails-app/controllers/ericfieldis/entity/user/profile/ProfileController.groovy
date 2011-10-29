@@ -4,8 +4,10 @@ import ericfieldis.entity.user.User
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.core.Authentication
 import org.weceem.controllers.WcmContentController
-import javax.servlet.http.Cookie
+import me.ericfieldis.servlet.CookieManagement
+import ericfieldis.entity.user.command.UpdateUserCommand
 
+@Mixin(CookieManagement)
 class ProfileController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -13,18 +15,33 @@ class ProfileController {
     def springSecurityUtils
 
     def me = {
+        boolean rememberMeCookieExists = findCookie("grails_remember_me") != null
+        boolean userCookieExists = findCookie("ThisIsMe.userCookie") != null
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication()
         if(authentication.principal != "anonymousUser") {
             User userInstance = User.findByUsername(authentication.principal.username)
             if (userInstance) {
-                request[WcmContentController.REQUEST_ATTRIBUTE_PREPARED_MODEL] = [userInstance: userInstance]
-                def uri = '/me/index'
+                if(!userCookieExists) {
+                    if(rememberMeCookieExists) {
+                        redirect(controller: "login")
+                        return
+                    }
+                    redirect(controller: "logout")
+                    return
+                }
+                UpdateUserCommand userCommand = new UpdateUserCommand(id: userInstance.id as Long, username: "test")
+                request[WcmContentController.REQUEST_ATTRIBUTE_PREPARED_MODEL] = [userCommand: userCommand.loadUser()]
+                def uri = params.uri ?: '/me/index'
                 params.clear()
                 params.uri = uri
                 forward(controller: 'wcmContent', action: 'show', params: params)
             }
         }
         else {
+            if(userCookieExists) {
+                redirect(controller: "logout")
+                return
+            }
             redirect(controller: "me", action: "index")
         }
     }

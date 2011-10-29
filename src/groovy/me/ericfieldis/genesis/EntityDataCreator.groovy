@@ -17,11 +17,11 @@ class EntityDataCreator extends AbstractXMLParsingDataCreator<Entity> {
 
     @Override
     void execute(NodeChild slurp) {
-        slurp.entity.each {entity ->
-            entity.citizen.each {citizen ->
-                Entity newEntity = Entity.generateCitizen(citizen.@firstName.text(), citizen.@middleInitial.text(), citizen.@lastName.text())
-                entity.citizen.user.each {user ->
-                    User newUser = User.generate(user.@email.text(), user.@username.text(), user.@password.text())
+        slurp.entity.each {theEntity ->
+            theEntity.citizen.each {theCitizen ->
+                Entity newEntity = Entity.generateCitizen(theCitizen.@firstName.text(), theCitizen.@middleInitial.text(), theCitizen.@lastName.text())
+                theCitizen.user.each {theUser ->
+                    User newUser = User.generate(theUser.@email.text(), theUser.@username.text(), theUser.@password.text())
                     newEntity.citizen.user = newUser
                     if (!newEntity.save()) {
                         newEntity.errors.each {
@@ -29,13 +29,12 @@ class EntityDataCreator extends AbstractXMLParsingDataCreator<Entity> {
                         }
                         throw new IllegalStateException("Entity could not be created. Consult logs")
                     }
-
-                    user.role.each { role ->
-                        UserRole.create(newUser, createRole(role.text()))
+                    theUser.role.each {theRole ->
+                        UserRole.create(newUser, createRole(theRole.text()))
                     }
                 }
             }
-            entity.business.each {business ->
+            theEntity.business.each {theBusiness ->
             }
         }
     }
