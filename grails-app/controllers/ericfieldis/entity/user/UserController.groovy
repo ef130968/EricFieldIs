@@ -7,6 +7,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile
 import me.ericfieldis.servlet.CookieManagement
 import me.ericfieldis.servlet.ImageManagement
 import grails.plugins.springsecurity.SpringSecurityService
+import ericfieldis.entity.user.command.UpdateUserCommand
 
 @Mixin(CookieManagement)
 @Mixin(ImageManagement)
@@ -15,7 +16,7 @@ class UserController {
     def springSecurityService
     def rememberMeServices
 
-    static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
+    static allowedMethods = [save: "POST", updateByUser: "POST", updateByAdmin: "POST", delete: "POST"]
 
     def index = {
         redirect(action: "list", params: params)
@@ -83,28 +84,27 @@ class UserController {
         retrieveImageFromDB(params.id)
     }
 
-    def updateByUser = {
+    def updateByUser = { UpdateUserCommand userCommand ->
         if(request instanceof MultipartHttpServletRequest) {
             MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
-            Authentication authentication = SecurityContextHolder.getContext().getAuthentication()
-            User userInstance = User.findByUsername(authentication.principal.username)
-
+            User userInstance = User.get(params.id)
+            //Authentication authentication = SecurityContextHolder.getContext().getAuthentication()
+            //User userInstance = User.findByUsername(authentication.principal.username)
             if (userInstance) {
-                CommonsMultipartFile multipartFile = (CommonsMultipartFile) multipartRequest.getFile("avatarFile");
-//                int index = multipartFile.originalFilename.lastIndexOf('.')
-//                String avatarFile = uploadFileToDisk(multipartFile, "userid_" + userInstance.id + multipartFile.originalFilename.substring(index), "WeceemFiles/me/avatars")
-//                if(avatarFile) {
-//                    userInstance.avatarFile = avatarFile
-//                }
-//                if (params.version) {
-//                    def version = params.version.toLong()
-//                    if (userInstance.version > version) {
-//                        //userInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'user.label', default: 'User')] as Object[], "Another user has updated this User while you were editing")
-//                        flash.message = "Another user has updated this User while you were editing"
-//                    }
-//                }
-                if(multipartFile.size && uploadImageToDB(multipartFile, userInstance)) {
-                    flash.message = "${message(code: 'default.updated.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
+                def version = params.version.toLong()
+                if (userInstance.version > version) {
+                    //userInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'user.label', default: 'User')] as Object[], "Another user has updated this User while you were editing")
+                    flash.message = "Another user has updated this User while you were editing"
+                }
+                else {
+                    CommonsMultipartFile multipartFile = (CommonsMultipartFile) multipartRequest.getFile("avatarFile");
+                    if(multipartFile.size && uploadImageToDB(multipartFile, userInstance)) {
+                        flash.message = "${message(code: 'default.updated.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
+                    }
+                    userInstance.properties = params
+                    if (!userInstance.hasErrors() && userInstance.save(flush: true)) {
+                        flash.message = "${message(code: 'default.updated.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
+                    }
                 }
             }
             else {
@@ -114,7 +114,7 @@ class UserController {
         }
     }
 
-    def update = {
+    def updateByAdmin = {
         User userInstance = User.get(params.id)
         if (userInstance) {
             if (params.version) {

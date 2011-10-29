@@ -10,31 +10,32 @@ import ericfieldis.entity.user.User
  * To change this template use File | Settings | File Templates.
  */
 class UpdateUserCommand {
-    Long id
-    Long version
+    Long userId
+    Long userVersion
     Long citizenId
 
     String email
     String username
     String password
+    String passwordConfirmation
     boolean enabled = true
     boolean accountExpired = false
     boolean accountLocked = false
     boolean passwordExpired = false
-    String avatarFile
+    //String avatarFile
     byte[] avatarImage
     String avatarMimeType
 
     static constraints = {
-        username blank: false, unique: true
+        username blank: false
         password blank: false
-        avatarFile nullable: true, blank: true, unique: true
+        //avatarFile nullable: true, blank: true
         avatarImage nullable: true, maxSize: 1073741824 // max 4GB file
         avatarMimeType nullable: true, blank: true
     }
 
     UpdateUserCommand loadUser() {
-        User userInstance = User.get(id)
+        User userInstance = User.get(userId)
         citizenId = userInstance.citizen.id
         email = userInstance.email
         username = userInstance.username
@@ -43,10 +44,10 @@ class UpdateUserCommand {
         accountExpired = userInstance.accountExpired
         accountLocked = userInstance.accountLocked
         passwordExpired = userInstance.passwordExpired
-        avatarFile = userInstance.avatarFile
+        //avatarFile = userInstance.avatarFile
         avatarImage = userInstance.avatarImage
         avatarMimeType = userInstance.avatarMimeType
-        version = userInstance.version
+        userVersion = userInstance.version
         this
     }
 
@@ -61,6 +62,6 @@ class UpdateUserCommand {
     }
 
     private User update() {
-        User.get(id).update(citizenId, email, username, password, enabled, accountExpired, accountLocked, passwordExpired, avatarFile, avatarImage, avatarMimeType)
+        User.get(userId).update(citizenId, email, username, password, enabled, accountExpired, accountLocked, passwordExpired, avatarImage, avatarMimeType)
     }
 }

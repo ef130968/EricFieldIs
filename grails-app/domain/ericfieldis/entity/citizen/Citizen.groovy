@@ -20,7 +20,7 @@ class Citizen {
 
     static constraints = {
         firstName(blank: false, maxSize: 20)
-        middleInitial(blank: true, size: 1..1, matches: "[A-Z]")
+        middleInitial(blank: true, nullable: true, maxSize: 1, matches: "[A-Z]")
         lastName(blank: false, maxSize: 20)
     }
 

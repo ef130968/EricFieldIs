@@ -6,6 +6,7 @@ import org.springframework.security.core.Authentication
 import org.weceem.controllers.WcmContentController
 import me.ericfieldis.servlet.CookieManagement
 import ericfieldis.entity.user.command.UpdateUserCommand
+import ericfieldis.entity.citizen.Citizen
 
 @Mixin(CookieManagement)
 class ProfileController {
@@ -29,8 +30,8 @@ class ProfileController {
                     redirect(controller: "logout")
                     return
                 }
-                UpdateUserCommand userCommand = new UpdateUserCommand(id: userInstance.id as Long, username: "test")
-                request[WcmContentController.REQUEST_ATTRIBUTE_PREPARED_MODEL] = [userCommand: userCommand.loadUser()]
+                UpdateUserCommand userCommand = new UpdateUserCommand(userId: userInstance.id).loadUser()
+                request[WcmContentController.REQUEST_ATTRIBUTE_PREPARED_MODEL] = [userCommand: userCommand, citizen: Citizen.get(userCommand.citizenId)]
                 def uri = params.uri ?: '/me/index'
                 params.clear()
                 params.uri = uri

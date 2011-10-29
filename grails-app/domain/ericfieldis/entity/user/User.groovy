@@ -15,20 +15,20 @@ class User {
     boolean accountExpired = false
     boolean accountLocked = false
     boolean passwordExpired = false
-    String avatarFile
+    //String avatarFile
     byte[] avatarImage
     String avatarMimeType
 
     static constraints = {
         username blank: false, unique: true
         password blank: false
-        avatarFile nullable: true, blank: true, unique: true
+        //avatarFile nullable: true, blank: true, unique: true
         avatarImage nullable: true, maxSize: 1073741824 // max 4GB file
         avatarMimeType nullable: true, blank: true
     }
 
     static mapping = {
-        password column: 'password'
+        //password column: 'password'
         //avatarImage sqlType: 'longblob'
     }
 
@@ -54,7 +54,7 @@ class User {
         new User(email: email, username: username, password: password)
     }
 
-    User update(Long citizenId, String email, String username, String password, boolean enabled, boolean accountExpired, boolean accountLocked, boolean passwordExpired, String avatarFile, byte[] avatarImage, String avatarMimeType) {
+    User update(Long citizenId, String email, String username, String password, boolean enabled, boolean accountExpired, boolean accountLocked, boolean passwordExpired, byte[] avatarImage, String avatarMimeType) {
         citizen = Citizen.get(citizenId)
         this.email = email
         this.username = username
@@ -63,7 +63,7 @@ class User {
         this.accountExpired = accountExpired
         this.accountLocked = accountLocked
         this.passwordExpired = passwordExpired
-        this.avatarFile = avatarFile
+        //this.avatarFile = avatarFile
         this.avatarImage = avatarImage
         this.avatarMimeType = avatarMimeType
         this

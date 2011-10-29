@@ -29,7 +29,7 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.13'
     }
     plugins{
-        runtime ":bean-fields:1.0-RC3"
+        runtime ":bean-fields:1.0.RC5"
         runtime ":blueprint:1.0.2"
         runtime ":cache-headers:1.1.5"
         runtime ":ckeditor:3.6.0.0"
