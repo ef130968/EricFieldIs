@@ -16,6 +16,8 @@ weceem.logout.url = [controller: 'logout']
 weceem.profile.url = [controller: 'profile', action: 'me']
 //weceem.admin.prefix = 'wcm-admin'
 
+cache.headers.enabled = false
+
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 grails.mime.file.extensions = false // enables the parsing of file extensions from URLs into the request format
 grails.mime.use.accept.header = false
@@ -128,6 +130,7 @@ grails.plugins.springsecurity.controllerAnnotations.staticRules = [
     "/user/login": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/user/logout": ["IS_AUTHENTICATED_ANONYMOUSLY"],
     "/user/updateByUser": ["hasAnyRole('ROLE_ADMIN', 'ROLE_USER')"],
+    "/user/getAvatarImageThumbnail/**": ["hasAnyRole('ROLE_ADMIN', 'ROLE_USER')"],
     "/user/**": ["hasRole('ROLE_ADMIN')"],
 
     "/_ROOT/images/**": ["IS_AUTHENTICATED_ANONYMOUSLY"],

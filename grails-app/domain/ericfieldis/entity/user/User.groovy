@@ -3,7 +3,6 @@ package ericfieldis.entity.user
 import ericfieldis.entity.citizen.Citizen
 
 class User {
-
     static belongsTo = [citizen: Citizen]
 
     transient springSecurityService
@@ -15,14 +14,12 @@ class User {
     boolean accountExpired = false
     boolean accountLocked = false
     boolean passwordExpired = false
-    //String avatarFile
     byte[] avatarImage
     String avatarMimeType
 
     static constraints = {
         username blank: false, unique: true
         password blank: false
-        //avatarFile nullable: true, blank: true, unique: true
         avatarImage nullable: true, maxSize: 1073741824 // max 4GB file
         avatarMimeType nullable: true, blank: true
     }
@@ -30,6 +27,8 @@ class User {
     static mapping = {
         //password column: 'password'
         //avatarImage sqlType: 'longblob'
+        //citizen lazy: false
+        //citizen cascade:"all"
     }
 
     Set<Role> getAuthorities() {
@@ -54,8 +53,10 @@ class User {
         new User(email: email, username: username, password: password)
     }
 
-    User update(Long citizenId, String email, String username, String password, boolean enabled, boolean accountExpired, boolean accountLocked, boolean passwordExpired, byte[] avatarImage, String avatarMimeType) {
-        citizen = Citizen.get(citizenId)
+    User update(String firstName, String middleInitial, String lastName, String email, String username, String password, boolean enabled, boolean accountExpired, boolean accountLocked, boolean passwordExpired, byte[] avatarImage, String avatarMimeType) {
+        this.citizen.firstName = firstName
+        this.citizen.middleInitial = middleInitial
+        this.citizen.lastName = lastName
         this.email = email
         this.username = username
         this.password = password
@@ -63,7 +64,6 @@ class User {
         this.accountExpired = accountExpired
         this.accountLocked = accountLocked
         this.passwordExpired = passwordExpired
-        //this.avatarFile = avatarFile
         this.avatarImage = avatarImage
         this.avatarMimeType = avatarMimeType
         this

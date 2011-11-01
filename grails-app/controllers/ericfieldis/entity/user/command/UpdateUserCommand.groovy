@@ -1,6 +1,7 @@
 package ericfieldis.entity.user.command
 
 import ericfieldis.entity.user.User
+import me.ericfieldis.servlet.ImageManagement
 
 /**
  * Created by IntelliJ IDEA.
@@ -9,6 +10,8 @@ import ericfieldis.entity.user.User
  * Time: 1:18 PM
  * To change this template use File | Settings | File Templates.
  */
+
+@Mixin(ImageManagement)
 class UpdateUserCommand {
     Long userId
     Long userVersion
@@ -22,14 +25,16 @@ class UpdateUserCommand {
     boolean accountExpired = false
     boolean accountLocked = false
     boolean passwordExpired = false
-    //String avatarFile
     byte[] avatarImage
     String avatarMimeType
 
     static constraints = {
         username blank: false
-        password blank: false
-        //avatarFile nullable: true, blank: true
+        password blank: true
+        passwordConfirmation blank: true, validator: {passwordConfirmation, obj ->
+         def password = obj.properties['password']
+         if(passwordConfirmation == null) return true // skip matching password validation (only important when setting/resetting pass)
+         passwordConfirmation == password ? true : ['user.settings.error.invalidPasswordConfirmationValue']}
         avatarImage nullable: true, maxSize: 1073741824 // max 4GB file
         avatarMimeType nullable: true, blank: true
     }
@@ -40,28 +45,36 @@ class UpdateUserCommand {
         email = userInstance.email
         username = userInstance.username
         password = userInstance.password
+        passwordConfirmation = password
         enabled = userInstance.enabled
         accountExpired = userInstance.accountExpired
         accountLocked = userInstance.accountLocked
         passwordExpired = userInstance.passwordExpired
-        //avatarFile = userInstance.avatarFile
         avatarImage = userInstance.avatarImage
         avatarMimeType = userInstance.avatarMimeType
         userVersion = userInstance.version
         this
     }
 
-    boolean execute() {
-        if(!validate()) {
+    boolean execute(def params) {
+        User userInstance = User.get(userId)
+        if(userVersion > userInstance.version) {
             return false
         }
-        User userInstance = update()
-        if(!userInstance.optimisticSave(version)) {
-            return true
+        String thePassword = userInstance.password
+        userInstance.properties = params
+        if(password.isEmpty()) userInstance.password = thePassword
+        if(params.multipartFile.size) {
+            userInstance.avatarMimeType = using(params.multipartFile).getMimeType()
+            userInstance.avatarImage = using(params.multipartFile).getImageBytes()
         }
+        if(!userInstance.validate()) {
+            this.errors = userInstance.errors
+            return false
+        }
+        userInstance.save(flush: true)
+        return true
     }
 
-    private User update() {
-        User.get(userId).update(citizenId, email, username, password, enabled, accountExpired, accountLocked, passwordExpired, avatarImage, avatarMimeType)
-    }
+
 }

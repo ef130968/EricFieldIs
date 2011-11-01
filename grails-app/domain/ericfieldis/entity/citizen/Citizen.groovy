@@ -14,10 +14,6 @@ class Citizen {
     User user
     //Coordinate coordinate
 
-//    static mapping = {
-//        user cascade: 'all'
-//    }
-
     static constraints = {
         firstName(blank: false, maxSize: 20)
         middleInitial(blank: true, nullable: true, maxSize: 1, matches: "[A-Z]")

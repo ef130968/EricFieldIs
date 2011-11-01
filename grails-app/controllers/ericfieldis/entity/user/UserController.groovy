@@ -1,13 +1,12 @@
 package ericfieldis.entity.user
 
-import org.springframework.security.core.context.SecurityContextHolder
-import org.springframework.security.core.Authentication
 import org.springframework.web.multipart.MultipartHttpServletRequest
 import org.springframework.web.multipart.commons.CommonsMultipartFile
 import me.ericfieldis.servlet.CookieManagement
 import me.ericfieldis.servlet.ImageManagement
-import grails.plugins.springsecurity.SpringSecurityService
 import ericfieldis.entity.user.command.UpdateUserCommand
+import org.weceem.controllers.WcmContentController
+import ericfieldis.entity.citizen.Citizen
 
 @Mixin(CookieManagement)
 @Mixin(ImageManagement)
@@ -84,33 +83,23 @@ class UserController {
         retrieveImageFromDB(params.id)
     }
 
-    def updateByUser = { UpdateUserCommand userCommand ->
+    def updateByUser = {UpdateUserCommand userCommand ->
         if(request instanceof MultipartHttpServletRequest) {
-            MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
-            User userInstance = User.get(params.id)
-            //Authentication authentication = SecurityContextHolder.getContext().getAuthentication()
-            //User userInstance = User.findByUsername(authentication.principal.username)
-            if (userInstance) {
-                def version = params.version.toLong()
-                if (userInstance.version > version) {
-                    //userInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'user.label', default: 'User')] as Object[], "Another user has updated this User while you were editing")
-                    flash.message = "Another user has updated this User while you were editing"
-                }
-                else {
-                    CommonsMultipartFile multipartFile = (CommonsMultipartFile) multipartRequest.getFile("avatarFile");
-                    if(multipartFile.size && uploadImageToDB(multipartFile, userInstance)) {
-                        flash.message = "${message(code: 'default.updated.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
-                    }
-                    userInstance.properties = params
-                    if (!userInstance.hasErrors() && userInstance.save(flush: true)) {
-                        flash.message = "${message(code: 'default.updated.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
-                    }
+            MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request
+            params.multipartFile = (CommonsMultipartFile) multipartRequest.getFile("avatarFile")
+            if(userCommand.validate()) {
+                if(userCommand.execute(params)) {
+                    flash.message = "${message(code: 'default.updated.message', args: [message(code: 'user.label', default: 'User'), params.userId])}"
+                    redirect(controller: "profile", action: "me")
+                    return
                 }
             }
-            else {
-                flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'user.label', default: 'User'), params.id])}"
-            }
-            redirect(controller: "profile", action: "me")
+            Citizen citizen = Citizen.get(userCommand.citizenId)
+            request[WcmContentController.REQUEST_ATTRIBUTE_PREPARED_MODEL] = [userCommand: userCommand, citizen: citizen]
+            def uri = '/me/settings'
+            params.clear()
+            params.uri = uri
+            forward(controller: 'wcmContent', action: 'show', params: params)
         }
     }
 

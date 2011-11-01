@@ -14,6 +14,7 @@ class ProfileController {
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def springSecurityUtils
+    def CacheHeadersService
 
     def me = {
         boolean rememberMeCookieExists = findCookie("grails_remember_me") != null
@@ -31,8 +32,10 @@ class ProfileController {
                     return
                 }
                 UpdateUserCommand userCommand = new UpdateUserCommand(userId: userInstance.id).loadUser()
-                request[WcmContentController.REQUEST_ATTRIBUTE_PREPARED_MODEL] = [userCommand: userCommand, citizen: Citizen.get(userCommand.citizenId)]
-                def uri = params.uri ?: '/me/index'
+                //userCommand.errors.rejectValue('passwordConfirmation', 'user.settings.error.invalidPasswordConfirmationValue')
+                Citizen citizen = Citizen.get(userCommand.citizenId)
+                request[WcmContentController.REQUEST_ATTRIBUTE_PREPARED_MODEL] = [userCommand: userCommand, citizen: citizen]
+                def uri = params.uri ?: '/me/welcome'
                 params.clear()
                 params.uri = uri
                 forward(controller: 'wcmContent', action: 'show', params: params)

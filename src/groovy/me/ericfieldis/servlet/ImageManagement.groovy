@@ -15,6 +15,9 @@ import org.grails.plugins.imagetools.ImageTool
  */
 
 class ImageManagement {
+
+    MultipartFile multipartFile
+
     def boolean deleteImageFromDisk(String name, String sourceDirectory) {
         def servletContext = ServletContextHolder.servletContext
         def storagePath = servletContext.getRealPath(sourceDirectory)
@@ -80,11 +83,15 @@ class ImageManagement {
         }
     }
 
-    def boolean uploadImageToDB(MultipartFile avatarFile, User userInstance) {
+    def ImageManagement using(MultipartFile multipartFile) {
+        this.multipartFile = multipartFile
+        this
+    }
 
+    def String getMimeType() {
         String imageMimeType
-        int index = avatarFile.originalFilename.lastIndexOf('.')
-        switch (avatarFile.originalFilename.substring(index + 1)) {
+        int index = multipartFile.originalFilename.lastIndexOf('.')
+        switch (multipartFile.originalFilename.substring(index + 1)) {
             case 'png':
                 imageMimeType = 'image/png'
                 break
@@ -95,9 +102,13 @@ class ImageManagement {
                 imageMimeType = 'image/jpeg'
                 break
         }
-        userInstance.avatarMimeType = imageMimeType
-        userInstance.avatarImage = avatarFile.bytes // avatar is the image blob field of the record
-        !userInstance.hasErrors() && userInstance.save(flush: true)
+        imageMimeType
+    }
+
+    def byte[] getImageBytes() {
+        byte[] imageBytes
+        imageBytes = multipartFile.bytes // avatar is the image blob field of the record
+        imageBytes
     }
 
     def void retrieveImageThumbnailFromDB(def userId, int maxSizeInPixels) {
